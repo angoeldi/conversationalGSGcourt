@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Courtroom backdrop">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1a1915"/>
+      <stop offset="1" stop-color="#0d0c09"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#c8a357" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#c8a357" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect y="520" width="1200" height="280" fill="#0b0a08"/>
+  <g opacity="0.25">
+    <rect x="80" y="160" width="160" height="420" rx="10" fill="#1f1a13"/>
+    <rect x="960" y="160" width="160" height="420" rx="10" fill="#1f1a13"/>
+    <rect x="140" y="120" width="60" height="520" rx="8" fill="#2c241a"/>
+    <rect x="1000" y="120" width="60" height="520" rx="8" fill="#2c241a"/>
+  </g>
+  <g opacity="0.2">
+    <rect x="330" y="110" width="540" height="340" rx="20" fill="#1b1611"/>
+    <path d="M360 420h480v120H360z" fill="#120f0b"/>
+    <path d="M380 160c70-80 370-80 440 0v160H380z" fill="#201a12"/>
+  </g>
+  <g opacity="0.35">
+    <path d="M260 160c60-70 180-90 340-90s280 20 340 90v80H260z" fill="#2b2217"/>
+    <rect x="260" y="240" width="680" height="40" fill="#241c14"/>
+  </g>
+  <g opacity="0.4">
+    <rect x="510" y="260" width="180" height="220" rx="12" fill="#15110c"/>
+    <rect x="540" y="290" width="120" height="140" rx="10" fill="#0f0c08"/>
+  </g>
+  <g opacity="0.2">
+    <rect x="200" y="340" width="120" height="140" rx="8" fill="#201812"/>
+    <rect x="880" y="340" width="120" height="140" rx="8" fill="#201812"/>
+  </g>
+  <rect x="420" y="60" width="360" height="220" rx="24" fill="url(#light)" opacity="0.45"/>
+  <g opacity="0.3">
+    <path d="M120 260h100v18H120zM120 300h100v18H120zM120 340h100v18H120z" fill="#3a2d1f"/>
+    <path d="M980 260h100v18H980zM980 300h100v18H980zM980 340h100v18H980z" fill="#3a2d1f"/>
+  </g>
+</svg>

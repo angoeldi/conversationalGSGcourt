@@ -1,0 +1,20 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Court UI layout">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1b1712" />
+      <stop offset="100%" stop-color="#0b0a08" />
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a241c" />
+      <stop offset="100%" stop-color="#17130f" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)" />
+  <rect x="40" y="60" width="340" height="555" rx="16" fill="url(#panel)" stroke="#42382c" />
+  <rect x="430" y="60" width="340" height="555" rx="16" fill="url(#panel)" stroke="#42382c" />
+  <rect x="820" y="60" width="340" height="555" rx="16" fill="url(#panel)" stroke="#42382c" />
+  <text x="210" y="110" fill="#f2e7d2" font-family="Georgia, serif" font-size="28" text-anchor="middle">Map</text>
+  <text x="600" y="110" fill="#f2e7d2" font-family="Georgia, serif" font-size="28" text-anchor="middle">Court</text>
+  <text x="990" y="110" fill="#f2e7d2" font-family="Georgia, serif" font-size="28" text-anchor="middle">Chat</text>
+  <text x="600" y="640" fill="#c8a357" font-family="Georgia, serif" font-size="14" text-anchor="middle">Static tri-panel UI, generative content</text>
+</svg>

@@ -1,0 +1,430 @@
+{
+  "version": 2,
+  "generated_at": "2026-01-28T14:17:18Z",
+  "entries": [
+    {
+      "nation_id": "d02dc70e-3b90-5085-9c43-a1a8d6c4d576",
+      "population": 619213,
+      "gdp": 73649792
+    },
+    {
+      "nation_id": "a1c3ec58-6420-5d81-b652-d7f83148bf75",
+      "population": 4092675,
+      "gdp": 402763612
+    },
+    {
+      "nation_id": "58a3ca8d-cf64-59ae-a4df-e0e4884e79a9",
+      "population": 42564,
+      "gdp": 4057670
+    },
+    {
+      "nation_id": "27c76a37-1ea6-5e1c-8cc8-c0034adec96d",
+      "population": 23159504,
+      "gdp": 8264073967
+    },
+    {
+      "nation_id": "dec621a3-45d1-576e-bd61-f7e60ec74d55",
+      "population": 2369341,
+      "gdp": 353583788
+    },
+    {
+      "nation_id": "aae6f634-0858-5f66-b1d2-8f3a92be33d7",
+      "population": 19094452,
+      "gdp": 2593854206
+    },
+    {
+      "nation_id": "f2b2891c-1e7e-5870-9dce-0ba277110ca3",
+      "population": 3170728,
+      "gdp": 584885457
+    },
+    {
+      "nation_id": "095951b3-57e8-565a-85ba-4172ec3b3edc",
+      "population": 6123658,
+      "gdp": 510231000
+    },
+    {
+      "nation_id": "d57c0b28-0854-5c0f-8031-7f4d7db85a5c",
+      "population": 719136,
+      "gdp": 57530918
+    },
+    {
+      "nation_id": "8a839ce1-9a70-5e46-ac33-c2e5534d639b",
+      "population": 3020762,
+      "gdp": 241660931
+    },
+    {
+      "nation_id": "a3490590-fb4b-5ef1-a3d3-5de5604c6e19",
+      "population": 1125159,
+      "gdp": 90012741
+    },
+    {
+      "nation_id": "ccc1d793-7718-5218-ae1e-84d7856f19c3",
+      "population": 799653,
+      "gdp": 141631760
+    },
+    {
+      "nation_id": "e77abf97-f222-544c-9cd0-89012acc55e0",
+      "population": 10186523,
+      "gdp": 1995733083
+    },
+    {
+      "nation_id": "81ea48c2-8907-5ff1-a465-f23b2e404f63",
+      "population": 4715616,
+      "gdp": 1445828823
+    },
+    {
+      "nation_id": "a9bf84e2-0e88-55a3-868b-d036093668ca",
+      "population": 725708,
+      "gdp": 238497758
+    },
+    {
+      "nation_id": "d7b5e946-4714-52e1-a914-1555dd420c0e",
+      "population": 10,
+      "gdp": 4288
+    },
+    {
+      "nation_id": "edc6dcdb-e957-523b-8400-5a5cb364d08b",
+      "population": 91238,
+      "gdp": 8810521
+    },
+    {
+      "nation_id": "7b548729-8e30-5141-a9fb-bcd5c8f4ec78",
+      "population": 4131679,
+      "gdp": 639390040
+    },
+    {
+      "nation_id": "4b331a31-dc56-5504-b50c-93f0aa0c24eb",
+      "population": 9001311,
+      "gdp": 1662395211
+    },
+    {
+      "nation_id": "62c16e8d-ac98-5dcb-bb5b-c5b073180fd0",
+      "population": 14890962,
+      "gdp": 2626065669
+    },
+    {
+      "nation_id": "6d37d314-ca5d-5b48-b0e3-f69d0f5bce6f",
+      "population": 2293831,
+      "gdp": 374206809
+    },
+    {
+      "nation_id": "7e671cd1-f184-5147-a2f7-510bd836d5c5",
+      "population": 3551786,
+      "gdp": 647454997
+    },
+    {
+      "nation_id": "8492ea9a-63b6-5902-81ad-070a1ed0be3e",
+      "population": 461829,
+      "gdp": 86064525
+    },
+    {
+      "nation_id": "b90f0d5c-ef95-5c24-adfc-64de4266990b",
+      "population": 1171526,
+      "gdp": 165434619
+    },
+    {
+      "nation_id": "7f1ff7fe-5c6f-59e1-8c2b-8047362042de",
+      "population": 55229,
+      "gdp": 8840160
+    },
+    {
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "population": 4731526,
+      "gdp": 1428363551
+    },
+    {
+      "nation_id": "0ea13865-1616-5182-a972-9b35f540984d",
+      "population": 225337,
+      "gdp": 63238130
+    },
+    {
+      "nation_id": "80bae0b6-7230-569f-855c-40f2c116e49f",
+      "population": 1149818,
+      "gdp": 108149842
+    },
+    {
+      "nation_id": "03edde03-cfa1-5fea-95d4-f73c85941614",
+      "population": 1644728,
+      "gdp": 131578207
+    },
+    {
+      "nation_id": "72337ccc-0647-5afa-b3fa-195abb1a5287",
+      "population": 319318,
+      "gdp": 31642424
+    },
+    {
+      "nation_id": "9c72fe42-33ac-5daa-a2db-0d74fa7547e6",
+      "population": 2146184,
+      "gdp": 233835630
+    },
+    {
+      "nation_id": "8594446a-2698-5b56-81ce-0f95e14451e3",
+      "population": 14179332,
+      "gdp": 1551685896
+    },
+    {
+      "nation_id": "92b1ccd4-5f66-5557-84ad-222510262658",
+      "population": 1825752,
+      "gdp": 174211439
+    },
+    {
+      "nation_id": "1d28345f-aeaf-5997-95b4-4a4438fead10",
+      "population": 334805,
+      "gdp": 26784375
+    },
+    {
+      "nation_id": "4cf1f753-0177-5dec-8f89-a226503450e6",
+      "population": 95674,
+      "gdp": 16466514
+    },
+    {
+      "nation_id": "8e213f4c-2757-53c2-8eab-5c800a18cbfa",
+      "population": 3123517,
+      "gdp": 249881387
+    },
+    {
+      "nation_id": "75350dab-e85d-5711-b569-bd7e0183af08",
+      "population": 7083053,
+      "gdp": 945274348
+    },
+    {
+      "nation_id": "89955669-d774-5370-afd7-ea19dd4b3ef9",
+      "population": 1902866,
+      "gdp": 152229267
+    },
+    {
+      "nation_id": "ec126ae0-b7b1-54e1-a4bc-59180c50a963",
+      "population": 3037682,
+      "gdp": 406931746
+    },
+    {
+      "nation_id": "05ca6946-4659-5d41-94b2-a420086f2e90",
+      "population": 2417875,
+      "gdp": 600082040
+    },
+    {
+      "nation_id": "aff73c65-8d27-55d9-a1b4-d9fdfb4a7b48",
+      "population": 2773569,
+      "gdp": 428056905
+    },
+    {
+      "nation_id": "96fd212b-cfcd-52ec-b84f-60411639d241",
+      "population": 1163236,
+      "gdp": 114393475
+    },
+    {
+      "nation_id": "3ef736a6-920e-54b7-b89e-0f5896edce21",
+      "population": 4912553,
+      "gdp": 833532425
+    },
+    {
+      "nation_id": "8f710277-54e7-56bc-a695-f849cd15751b",
+      "population": 505853,
+      "gdp": 57896832
+    },
+    {
+      "nation_id": "63a5ff0d-2483-5efb-a688-e1eec643f85d",
+      "population": 3813268,
+      "gdp": 355252740
+    },
+    {
+      "nation_id": "f7670112-aa53-5d24-a36d-71ec8e3752a5",
+      "population": 6806050,
+      "gdp": 797959741
+    },
+    {
+      "nation_id": "62d4eca8-2ddf-5357-98de-1efd0dc308fa",
+      "population": 3648424,
+      "gdp": 1012573794
+    },
+    {
+      "nation_id": "0810b4ef-2a02-5cd5-9e71-a30de0bb0c62",
+      "population": 227557,
+      "gdp": 31437630
+    },
+    {
+      "nation_id": "9cc6e034-8543-560c-811e-62e8a70dfa71",
+      "population": 96409955,
+      "gdp": 10330484510
+    },
+    {
+      "nation_id": "dc88260b-a512-58d8-adfc-abbe7b52a85e",
+      "population": 2018537,
+      "gdp": 170891080
+    },
+    {
+      "nation_id": "cb157133-d745-597f-8cd3-cac5d1a4f584",
+      "population": 5850133,
+      "gdp": 876729240
+    },
+    {
+      "nation_id": "9b84615a-86cc-50c7-ba76-cf6d41844940",
+      "population": 208688,
+      "gdp": 29475002
+    },
+    {
+      "nation_id": "a8ee5eca-d1c6-5930-b2f6-c4b83b7a9a51",
+      "population": 3131671,
+      "gdp": 642382928
+    },
+    {
+      "nation_id": "aaec6dd3-ecb9-58c6-a022-6a0c9a1402a2",
+      "population": 5865578,
+      "gdp": 1857767337
+    },
+    {
+      "nation_id": "2b54bee0-dd2d-5645-a197-6400015565f4",
+      "population": 689336,
+      "gdp": 152729128
+    },
+    {
+      "nation_id": "9b57fbba-d1a6-57bc-8a5b-460a5b025532",
+      "population": 5886520,
+      "gdp": 1054914204
+    },
+    {
+      "nation_id": "93e756b4-3697-5d1a-b887-1845adadcd1b",
+      "population": 134960,
+      "gdp": 30573561
+    },
+    {
+      "nation_id": "936fae14-40e8-5d23-8c33-a299a51db89c",
+      "population": 93600,
+      "gdp": 23433494
+    },
+    {
+      "nation_id": "8febf542-3470-5332-9e3c-8f224e4cb6e3",
+      "population": 286989,
+      "gdp": 61108075
+    },
+    {
+      "nation_id": "974ad2eb-485f-59c6-90cd-f6066ec783e9",
+      "population": 724576,
+      "gdp": 180134424
+    },
+    {
+      "nation_id": "fa5f2afa-513b-582b-a981-6d812abddb80",
+      "population": 3321583,
+      "gdp": 898566516
+    },
+    {
+      "nation_id": "1b2ba0b5-b125-5527-8ef9-6b0bbf700526",
+      "population": 348652,
+      "gdp": 132787996
+    },
+    {
+      "nation_id": "0a73b3e8-7043-5774-b73e-ac08df7d3ee2",
+      "population": 20306,
+      "gdp": 5963126
+    },
+    {
+      "nation_id": "e24d0789-80d6-5692-88a7-912c7ced8e81",
+      "population": 346927,
+      "gdp": 106152778
+    },
+    {
+      "nation_id": "303fc4ee-d795-5625-a4e6-2622df048bb0",
+      "population": 1789622,
+      "gdp": 601597552
+    },
+    {
+      "nation_id": "11f18da9-b4ac-5c8d-b1de-137fa39d2c49",
+      "population": 98618186,
+      "gdp": 18413424543
+    },
+    {
+      "nation_id": "1dfa7f08-87cb-58e8-a1f7-1c696237ef80",
+      "population": 1662907,
+      "gdp": 532080276
+    },
+    {
+      "nation_id": "15903949-aeb1-5773-9ee5-7e70ea5e578f",
+      "population": 4254386,
+      "gdp": 1198438045
+    },
+    {
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 4715616,
+      "gdp": 1445828823
+    },
+    {
+      "nation_id": "2decd3ce-0cf4-54c7-be7e-fc50627dc09d",
+      "population": 707212,
+      "gdp": 101164972
+    },
+    {
+      "nation_id": "875a208e-46fc-54b5-bcae-b66f2a6a37b3",
+      "population": 262498,
+      "gdp": 37285056
+    },
+    {
+      "nation_id": "567b054b-2999-5341-933f-658ad1a40d5e",
+      "population": 7628354,
+      "gdp": 976014725
+    },
+    {
+      "nation_id": "ad5c5fc5-70e4-5ca5-918c-23f01a7d87eb",
+      "population": 2254271,
+      "gdp": 436881019
+    },
+    {
+      "nation_id": "042fc8a6-313b-5b42-aca7-bdb222f11fb0",
+      "population": 147319,
+      "gdp": 38056936
+    },
+    {
+      "nation_id": "64e1c93c-8b0a-56e7-b2cc-4a26fed884d6",
+      "population": 384822,
+      "gdp": 89575384
+    },
+    {
+      "nation_id": "9dbb0657-18ed-5f45-9e91-0728c536159e",
+      "population": 7907908,
+      "gdp": 632632604
+    },
+    {
+      "nation_id": "50611bed-e7af-5fee-b8f0-175e64ef84c9",
+      "population": 8908839,
+      "gdp": 2683666190
+    },
+    {
+      "nation_id": "d9846ca1-2000-58ab-afcd-b082a22cebba",
+      "population": 317,
+      "gdp": 142560
+    },
+    {
+      "nation_id": "8335ad71-6596-54ed-8e52-b02a1e85faf0",
+      "population": 23001,
+      "gdp": 4406429
+    },
+    {
+      "nation_id": "9452bed7-0257-5a6d-b191-5a89c213fccf",
+      "population": 84568,
+      "gdp": 20224807
+    },
+    {
+      "nation_id": "5ef1d4e2-6aa7-5b3d-80bc-1cfeab765d4a",
+      "population": 359568,
+      "gdp": 46073535
+    },
+    {
+      "nation_id": "1397930e-6e2d-5bb5-b590-511fd53faa61",
+      "population": 490015,
+      "gdp": 81645858
+    },
+    {
+      "nation_id": "38fab387-5366-50d9-9772-dd058382208c",
+      "population": 780506,
+      "gdp": 66370081
+    }
+  ],
+  "notes": {
+    "population_target": 450000000,
+    "base_gdp_per_capita": 200,
+    "per_capita_exponent": 0.35,
+    "per_capita_clamp": [
+      80,
+      450
+    ]
+  }
+}

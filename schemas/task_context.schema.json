@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/task_context.schema.json",
+  "title": "TaskContext",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_id", "task_type", "nation_id", "created_turn", "urgency", "prompt"],
+  "properties": {
+    "task_id": { "type": "string", "format": "uuid" },
+    "task_type": { "type": "string", "enum": ["diplomacy","war","finance","interior","intrigue","appointment","petition","crisis"] },
+    "owner_character_id": { "type": "string", "format": "uuid" },
+    "nation_id": { "type": "string", "format": "uuid" },
+    "created_turn": { "type": "integer", "minimum": 0 },
+    "due_turn": { "type": "integer", "minimum": 0 },
+    "urgency": { "type": "string", "enum": ["low","medium","high"], "default": "medium" },
+    "prompt": { "type": "string", "minLength": 1 },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/context_source" }, "default": [] },
+    "story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["story_id", "title", "summary"],
+      "properties": {
+        "story_id": { "type": "string", "format": "uuid" },
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "history": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "last_turn": { "type": "integer", "minimum": 0 },
+        "transcripts": { "type": "array", "items": { "$ref": "#/$defs/story_transcript" }, "default": [] }
+      }
+    },
+    "perceived_facts": { "type": "array", "items": { "$ref": "#/$defs/perceived_fact" }, "default": [] },
+    "entities": { "type": "array", "items": { "$ref": "#/$defs/entity_ref" }, "default": [] },
+    "constraints": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "allowed_action_types": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "forbidden_action_types": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "suggested_action_types": { "type": "array", "items": { "type": "string" }, "default": [] },
+        "notes": { "type": "array", "items": { "type": "string" }, "default": [] }
+      },
+      "default": { "allowed_action_types": [], "forbidden_action_types": [], "suggested_action_types": [], "notes": [] }
+    },
+    "chat_summary": { "type": "string", "default": "" },
+    "last_messages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "content"],
+        "properties": {
+          "role": { "type": "string", "enum": ["player","courtier","system"] },
+          "sender_character_id": { "type": "string", "format": "uuid" },
+          "content": { "type": "string", "minLength": 1 }
+        }
+      },
+      "default": []
+    }
+  },
+  "$defs": {
+    "perceived_fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fact_id","domain","statement","value","confidence","last_updated_turn"],
+      "properties": {
+        "fact_id": { "type": "string", "minLength": 1 },
+        "domain": { "type": "string", "enum": ["diplomacy","war","finance","interior","intrigue","society","economy"] },
+        "statement": { "type": "string", "minLength": 1 },
+        "value": { "oneOf": [{"type":"number"},{"type":"string"},{"type":"boolean"},{"type":"null"}] },
+        "scale": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "last_updated_turn": { "type": "integer", "minimum": 0 },
+        "source_character_id": { "type": "string", "format": "uuid" },
+        "notes": { "type": "string" }
+      }
+    },
+    "entity_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_type","entity_id","display_name"],
+      "properties": {
+        "entity_type": { "type": "string", "enum": ["nation","province","character","office","interest_group","operation"] },
+        "entity_id": { "type": "string", "format": "uuid" },
+        "display_name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "context_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title","url"],
+      "properties": {
+        "source_type": { "type": "string", "enum": ["wikipedia"], "default": "wikipedia" },
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "excerpt": { "type": "string", "default": "" }
+      }
+    },
+    "transcript_message": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role", "content"],
+      "properties": {
+        "role": { "type": "string", "enum": ["player","courtier","system"] },
+        "sender_character_id": { "type": "string", "format": "uuid" },
+        "content": { "type": "string", "minLength": 1 }
+      }
+    },
+    "story_transcript": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_id", "turn_index", "messages"],
+      "properties": {
+        "task_id": { "type": "string", "format": "uuid" },
+        "turn_index": { "type": "integer", "minimum": 0 },
+        "messages": { "type": "array", "items": { "$ref": "#/$defs/transcript_message" }, "minItems": 1 }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/action_effect.schema.json",
+  "title": "ActionEffect",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["effect_type", "delta", "audit"],
+  "properties": {
+    "effect_type": { "type": "string", "minLength": 1 },
+    "delta": { "type": "object", "additionalProperties": true },
+    "audit": { "type": "object", "additionalProperties": true }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/scenario.schema.json",
+  "title": "Scenario",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scenario_id",
+    "name",
+    "start_date",
+    "geo_pack",
+    "player_nation_id",
+    "nations",
+    "region_assignments",
+    "nation_snapshots",
+    "province_snapshots",
+    "characters",
+    "offices",
+    "appointments"
+  ],
+  "properties": {
+    "scenario_id": { "type": "string", "format": "uuid" },
+    "name": { "type": "string", "minLength": 1 },
+    "start_date": { "type": "string", "minLength": 4 },
+    "calendar": { "type": "string", "enum": ["gregorian","julian","mixed"], "default": "gregorian" },
+    "geo_pack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id","version"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "version": { "type": "string", "minLength": 1 }
+      }
+    },
+    "player_nation_id": { "type": "string", "format": "uuid" },
+    "nations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["nation_id","name","tag","government_type","capital_geo_region_id"],
+        "properties": {
+          "nation_id": { "type": "string", "format": "uuid" },
+          "name": { "type": "string", "minLength": 1 },
+          "tag": { "type": "string", "minLength": 1, "maxLength": 8 },
+          "government_type": { "type": "string", "enum": ["monarchy","republic","empire","theocracy","city_state","tribal"] },
+          "capital_geo_region_id": { "type": "string", "format": "uuid" }
+        }
+      }
+    },
+    "relations": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["from_nation_id","to_nation_id","value"],
+        "properties": {
+          "from_nation_id": { "type": "string", "format": "uuid" },
+          "to_nation_id": { "type": "string", "format": "uuid" },
+          "value": { "type": "integer", "minimum": -100, "maximum": 100 },
+          "treaties": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+          "at_war": { "type": "boolean", "default": false }
+        }
+      }
+    },
+    "region_assignments": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["geo_region_id","nation_id"],
+        "properties": {
+          "geo_region_id": { "$ref": "#/$defs/uuid" },
+          "geo_region_key": { "type": "string", "minLength": 1 },
+          "nation_id": { "type": "string", "format": "uuid" }
+        }
+      }
+    },
+    "nation_snapshots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/nation_snapshot" } },
+    "province_snapshots": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/province_snapshot" } },
+    "nation_profiles": { "type": "array", "items": { "$ref": "#/$defs/nation_profile" }, "default": [] },
+    "characters": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/character" } },
+    "offices": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/office" } },
+    "appointments": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/appointment" } },
+    "succession": { "type": "array", "items": { "$ref": "#/$defs/succession" }, "default": [] },
+    "initial_tasks": { "type": "array", "items": { "$ref": "#/$defs/initial_task" }, "default": [] },
+    "wiki_sources": { "type": "array", "items": { "$ref": "#/$defs/wiki_source" }, "default": [] },
+    "uncertainty_notes": { "type": "array", "items": { "type": "string" }, "default": [] }
+  },
+  "$defs": {
+    "uuid": { "type": "string", "format": "uuid" },
+    "nation_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nation_id","gdp","tax_rate","tax_capacity","compliance","treasury","debt","stability","legitimacy","population","literacy","admin_capacity","corruption","manpower_pool","force_size","readiness","supply","war_exhaustion","tech_level_mil"],
+      "properties": {
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "gdp": { "type": "number", "minimum": 0 },
+        "tax_rate": { "type": "number", "minimum": 0, "maximum": 0.9 },
+        "tax_capacity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "compliance": { "type": "number", "minimum": 0, "maximum": 1 },
+        "treasury": { "type": "integer" },
+        "debt": { "type": "integer", "minimum": 0 },
+        "stability": { "type": "number", "minimum": 0, "maximum": 100 },
+        "legitimacy": { "type": "number", "minimum": 0, "maximum": 100 },
+        "population": { "type": "number", "minimum": 0 },
+        "literacy": { "type": "number", "minimum": 0, "maximum": 1 },
+        "admin_capacity": { "type": "number", "minimum": 0, "maximum": 100 },
+        "corruption": { "type": "number", "minimum": 0, "maximum": 1 },
+        "manpower_pool": { "type": "number", "minimum": 0 },
+        "force_size": { "type": "number", "minimum": 0 },
+        "readiness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "supply": { "type": "number", "minimum": 0, "maximum": 1 },
+        "war_exhaustion": { "type": "number", "minimum": 0, "maximum": 100 },
+        "tech_level_mil": { "type": "number", "minimum": 0, "maximum": 100 },
+        "laws": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "institutions": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 10 }, "default": {} },
+        "culture_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} },
+        "religion_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} }
+      }
+    },
+    "province_snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["geo_region_id","nation_id","population","productivity","infrastructure","unrest","compliance_local","garrison"],
+      "properties": {
+        "geo_region_id": { "$ref": "#/$defs/uuid" },
+        "geo_region_key": { "type": "string", "minLength": 1 },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "population": { "type": "number", "minimum": 0 },
+        "productivity": { "type": "number", "minimum": 0, "maximum": 10 },
+        "infrastructure": { "type": "number", "minimum": 0, "maximum": 10 },
+        "unrest": { "type": "number", "minimum": 0, "maximum": 100 },
+        "compliance_local": { "type": "number", "minimum": 0, "maximum": 1 },
+        "garrison": { "type": "number", "minimum": 0, "maximum": 1000000 },
+        "resources": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "culture_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} },
+        "religion_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} }
+      }
+    },
+    "character": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["character_id","name"],
+      "properties": {
+        "character_id": { "$ref": "#/$defs/uuid" },
+        "name": { "type": "string", "minLength": 1 },
+        "title": { "type": "string" },
+        "portrait_prompt": { "type": "string" },
+        "bio": { "type": "string", "default": "" },
+        "traits": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "skills": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "diplomacy": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 },
+            "finance": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 },
+            "war": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 },
+            "interior": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 },
+            "intrigue": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 },
+            "admin": { "type": "integer", "minimum": 0, "maximum": 100, "default": 50 }
+          },
+          "default": {}
+        },
+        "advisor_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "accuracy": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.25 },
+            "reliability": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.75 },
+            "bias": { "type": "object", "additionalProperties": true, "default": {} },
+            "scope": { "type": "object", "additionalProperties": true, "default": {} }
+          },
+          "default": {}
+        },
+        "loyalties": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} }
+      }
+    },
+    "office": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["office_id","nation_id","name","domain"],
+      "properties": {
+        "office_id": { "$ref": "#/$defs/uuid" },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "name": { "type": "string", "minLength": 1 },
+        "domain": { "type": "string", "enum": ["foreign","interior","finance","war","intelligence","chancellery"] },
+        "rank": { "type": "integer", "minimum": 1, "maximum": 10, "default": 5 }
+      }
+    },
+    "appointment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["office_id","character_id"],
+      "properties": {
+        "office_id": { "$ref": "#/$defs/uuid" },
+        "character_id": { "$ref": "#/$defs/uuid" },
+        "start_turn": { "type": "integer", "minimum": 0, "default": 0 }
+      }
+    },
+    "succession": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nation_id","method"],
+      "properties": {
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "method": { "type": "string", "minLength": 1 },
+        "rules": { "type": "object", "additionalProperties": true, "default": {} },
+        "current": { "type": "array", "items": { "$ref": "#/$defs/uuid" }, "default": [] }
+      }
+    },
+    "nation_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["nation_id","summary"],
+      "properties": {
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "summary": { "type": "string", "minLength": 1 },
+        "map_aliases": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "trajectory": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "gdp_growth_decade": { "type": "number" },
+            "population_growth_decade": { "type": "number" },
+            "stability_drift_decade": { "type": "number" },
+            "literacy_growth_decade": { "type": "number" }
+          },
+          "default": {}
+        }
+      }
+    },
+    "initial_task": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["task_type","prompt"],
+      "properties": {
+        "task_type": { "type": "string", "enum": ["diplomacy","war","finance","interior","intrigue","appointment","petition","crisis"] },
+        "owner_character_id": { "$ref": "#/$defs/uuid" },
+        "urgency": { "type": "string", "enum": ["low","medium","high"], "default": "medium" },
+        "prompt": { "type": "string", "minLength": 1 },
+        "context_overrides": { "type": "object", "additionalProperties": true, "default": {} }
+      }
+    },
+    "wiki_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title","url"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "minLength": 1 },
+        "excerpt": { "type": "string", "default": "" }
+      }
+    }
+  }
+}

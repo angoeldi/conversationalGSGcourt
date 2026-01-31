@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/court_chat_request.schema.json",
+  "title": "CourtChatRequest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["task_context", "player_text", "active_character_ids", "characters"],
+  "properties": {
+    "task_context": { "$ref": "./task_context.schema.json" },
+    "player_text": { "type": "string", "minLength": 1 },
+    "active_character_ids": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "format": "uuid" }
+    },
+    "characters": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/court_character" }
+    },
+    "max_messages": { "type": "integer", "minimum": 1, "maximum": 4, "default": 2 }
+  },
+  "$defs": {
+    "court_character": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["character_id", "name"],
+      "properties": {
+        "character_id": { "type": "string", "format": "uuid" },
+        "name": { "type": "string", "minLength": 1 },
+        "title": { "type": "string" },
+        "office": { "type": "string" },
+        "domain": { "type": "string", "enum": ["foreign", "interior", "finance", "war", "intelligence", "chancellery"] },
+        "traits": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "skills": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "diplomacy": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "finance": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "war": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "interior": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "intrigue": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "admin": { "type": "integer", "minimum": 0, "maximum": 100 }
+          },
+          "default": {}
+        },
+        "advisor_model": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "accuracy": { "type": "number", "minimum": 0, "maximum": 1 },
+            "reliability": { "type": "number", "minimum": 0, "maximum": 1 }
+          },
+          "default": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/world_state.schema.json",
+  "title": "WorldState",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["turn_index", "turn_seed", "player_nation_id", "nations", "provinces"],
+  "properties": {
+    "turn_index": { "type": "integer", "minimum": 0 },
+    "turn_seed": { "type": "integer" },
+    "player_nation_id": { "$ref": "#/$defs/uuid" },
+    "nations": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/nation_state" }
+    },
+    "provinces": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/province_state" }
+    },
+    "relations": { "type": "array", "items": { "$ref": "#/$defs/relation_edge" }, "default": [] },
+    "operations": { "type": "array", "items": { "$ref": "#/$defs/operation" }, "default": [] },
+    "nation_trajectories": { "type": "object", "additionalProperties": { "$ref": "#/$defs/nation_trajectory" }, "default": {} },
+    "trajectory_modifiers": { "type": "array", "items": { "$ref": "#/$defs/trajectory_modifier" }, "default": [] },
+    "appointments": { "type": "array", "items": { "$ref": "#/$defs/appointment_state" }, "default": [] },
+    "debt_instruments": { "type": "array", "items": { "$ref": "#/$defs/debt_instrument" }, "default": [] }
+  },
+  "$defs": {
+    "uuid": { "type": "string", "format": "uuid" },
+    "nation_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "nation_id",
+        "gdp",
+        "tax_rate",
+        "tax_capacity",
+        "compliance",
+        "treasury",
+        "debt",
+        "stability",
+        "legitimacy",
+        "population",
+        "literacy",
+        "admin_capacity",
+        "corruption",
+        "manpower_pool",
+        "force_size",
+        "readiness",
+        "supply",
+        "war_exhaustion",
+        "tech_level_mil"
+      ],
+      "properties": {
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "gdp": { "type": "number", "minimum": 0 },
+        "tax_rate": { "type": "number", "minimum": 0, "maximum": 0.9 },
+        "tax_capacity": { "type": "number", "minimum": 0, "maximum": 1 },
+        "compliance": { "type": "number", "minimum": 0, "maximum": 1 },
+        "treasury": { "type": "number" },
+        "debt": { "type": "number", "minimum": 0 },
+        "stability": { "type": "number", "minimum": 0, "maximum": 100 },
+        "legitimacy": { "type": "number", "minimum": 0, "maximum": 100 },
+        "population": { "type": "number", "minimum": 0 },
+        "literacy": { "type": "number", "minimum": 0, "maximum": 1 },
+        "admin_capacity": { "type": "number", "minimum": 0, "maximum": 100 },
+        "corruption": { "type": "number", "minimum": 0, "maximum": 1 },
+        "manpower_pool": { "type": "number", "minimum": 0 },
+        "force_size": { "type": "number", "minimum": 0 },
+        "readiness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "supply": { "type": "number", "minimum": 0, "maximum": 1 },
+        "war_exhaustion": { "type": "number", "minimum": 0, "maximum": 100 },
+        "tech_level_mil": { "type": "number", "minimum": 0, "maximum": 100 },
+        "laws": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "institutions": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0, "maximum": 10 }, "default": {} },
+        "culture_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} },
+        "religion_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} }
+      }
+    },
+    "province_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["geo_region_id", "nation_id", "population", "productivity", "infrastructure", "unrest", "compliance_local", "garrison"],
+      "properties": {
+        "geo_region_id": { "$ref": "#/$defs/uuid" },
+        "geo_region_key": { "type": "string", "minLength": 1 },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "population": { "type": "number", "minimum": 0 },
+        "productivity": { "type": "number", "minimum": 0, "maximum": 10 },
+        "infrastructure": { "type": "number", "minimum": 0, "maximum": 10 },
+        "unrest": { "type": "number", "minimum": 0, "maximum": 100 },
+        "compliance_local": { "type": "number", "minimum": 0, "maximum": 1 },
+        "garrison": { "type": "number", "minimum": 0, "maximum": 1000000 },
+        "resources": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "culture_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} },
+        "religion_mix": { "type": "object", "additionalProperties": { "type": "number", "minimum": 0, "maximum": 1 }, "default": {} }
+      }
+    },
+    "relation_edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_nation_id", "to_nation_id", "value", "treaties", "at_war"],
+      "properties": {
+        "from_nation_id": { "$ref": "#/$defs/uuid" },
+        "to_nation_id": { "$ref": "#/$defs/uuid" },
+        "value": { "type": "number", "minimum": -100, "maximum": 100 },
+        "treaties": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] },
+        "at_war": { "type": "boolean", "default": false }
+      }
+    },
+    "operation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["operation_id", "type", "nation_id", "remaining_weeks", "meta"],
+      "properties": {
+        "operation_id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "target_nation_id": { "$ref": "#/$defs/uuid" },
+        "remaining_weeks": { "type": "integer", "minimum": 0 },
+        "budget_weekly": { "type": "number", "minimum": 0 },
+        "budget_total": { "type": "number", "minimum": 0 },
+        "remaining_budget": { "type": "number", "minimum": 0 },
+        "meta": { "type": "object", "additionalProperties": true, "default": {} }
+      }
+    },
+    "nation_trajectory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gdp_growth_decade": { "type": "number" },
+        "population_growth_decade": { "type": "number" },
+        "stability_drift_decade": { "type": "number" },
+        "literacy_growth_decade": { "type": "number" }
+      }
+    },
+    "trajectory_modifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modifier_id", "nation_id", "metric", "delta", "remaining_weeks"],
+      "properties": {
+        "modifier_id": { "type": "string", "minLength": 1 },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "metric": { "type": "string", "enum": ["gdp_growth_decade", "population_growth_decade", "stability_drift_decade", "literacy_growth_decade"] },
+        "delta": { "type": "number" },
+        "remaining_weeks": { "type": "integer", "minimum": 0 },
+        "source": { "type": "string" },
+        "note": { "type": "string" }
+      }
+    },
+    "appointment_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["office_id", "character_id", "start_turn"],
+      "properties": {
+        "office_id": { "$ref": "#/$defs/uuid" },
+        "character_id": { "$ref": "#/$defs/uuid" },
+        "start_turn": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "debt_instrument": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instrument_id", "nation_id", "principal", "interest_rate_annual", "remaining_weeks", "issued_turn"],
+      "properties": {
+        "instrument_id": { "type": "string", "minLength": 1 },
+        "nation_id": { "$ref": "#/$defs/uuid" },
+        "principal": { "type": "number", "minimum": 0 },
+        "interest_rate_annual": { "type": "number", "minimum": 0 },
+        "remaining_weeks": { "type": "integer", "minimum": 0 },
+        "issued_turn": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

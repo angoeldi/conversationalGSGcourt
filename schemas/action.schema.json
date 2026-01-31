@@ -1,0 +1,612 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://thecourt.local/schemas/action.schema.json",
+  "title": "Action",
+  "type": "object",
+  "oneOf": [
+    { "$ref": "#/$defs/send_spy" },
+    { "$ref": "#/$defs/counterintelligence" },
+    { "$ref": "#/$defs/send_envoy" },
+    { "$ref": "#/$defs/improve_relations" },
+    { "$ref": "#/$defs/sign_treaty" },
+    { "$ref": "#/$defs/issue_ultimatum" },
+    { "$ref": "#/$defs/sanction" },
+    { "$ref": "#/$defs/recognize_claim" },
+    { "$ref": "#/$defs/adjust_tax_rate" },
+    { "$ref": "#/$defs/issue_debt" },
+    { "$ref": "#/$defs/cut_spending" },
+    { "$ref": "#/$defs/fund_project" },
+    { "$ref": "#/$defs/subsidize_sector" },
+    { "$ref": "#/$defs/appoint_official" },
+    { "$ref": "#/$defs/reform_law" },
+    { "$ref": "#/$defs/crackdown" },
+    { "$ref": "#/$defs/mobilize" },
+    { "$ref": "#/$defs/raise_levies" },
+    { "$ref": "#/$defs/fortify" },
+    { "$ref": "#/$defs/deploy_force" },
+    { "$ref": "#/$defs/reorganize_army" },
+    { "$ref": "#/$defs/fund_faction" },
+    { "$ref": "#/$defs/leak_story" },
+    { "$ref": "#/$defs/freeform_effect" },
+    { "$ref": "#/$defs/create_committee" },
+    { "$ref": "#/$defs/apply_trajectory_modifier" }
+  ],
+  "$defs": {
+    "uuid": { "type": "string", "format": "uuid" },
+    "nonEmpty": { "type": "string", "minLength": 1 },
+    "riskTolerance": { "type": "string", "enum": ["low", "medium", "high"] },
+    "tone": { "type": "string", "enum": ["conciliatory", "neutral", "firm", "hostile"] },
+    "money": { "type": "integer", "minimum": 0 },
+    "weeks": { "type": "integer", "minimum": 1, "maximum": 52 },
+    "trajectory_metric": {
+      "type": "string",
+      "enum": [
+        "gdp_growth_decade",
+        "population_growth_decade",
+        "stability_drift_decade",
+        "literacy_growth_decade"
+      ]
+    },
+
+    "send_spy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "send_spy" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "objective", "budget", "duration_weeks", "risk_tolerance"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "objective": { "type": "string", "enum": ["naval_intel", "army_intel", "economic_intel", "political_intel", "sabotage", "influence"] },
+            "budget": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" },
+            "risk_tolerance": { "$ref": "#/$defs/riskTolerance" }
+          }
+        }
+      }
+    },
+
+    "counterintelligence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "counterintelligence" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["budget", "duration_weeks"],
+          "properties": {
+            "budget": { "$ref": "#/$defs/money" },
+            "focus": { "type": "string", "enum": ["ports", "court", "frontier", "finance"], "default": "court" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "send_envoy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "send_envoy" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "message_tone", "topic"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "message_tone": { "$ref": "#/$defs/tone" },
+            "topic": { "$ref": "#/$defs/nonEmpty" },
+            "offer": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "improve_relations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "improve_relations" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "budget", "duration_weeks"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "budget": { "$ref": "#/$defs/money" },
+            "message_tone": { "$ref": "#/$defs/tone", "default": "neutral" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "sign_treaty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "sign_treaty" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "treaty_type"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "treaty_type": { "type": "string", "enum": ["trade", "non_aggression", "alliance", "research", "access"] },
+            "concessions": { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" }, "default": [] }
+          }
+        }
+      }
+    },
+
+    "issue_ultimatum": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "issue_ultimatum" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "demand", "deadline_weeks"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "demand": { "$ref": "#/$defs/nonEmpty" },
+            "deadline_weeks": { "type": "integer", "minimum": 1, "maximum": 12 },
+            "backdown_cost_legitimacy": { "type": "number", "minimum": 0, "maximum": 25, "default": 5 }
+          }
+        }
+      }
+    },
+
+    "sanction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "sanction" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "scope", "severity", "duration_weeks"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "scope": { "type": "string", "enum": ["trade", "finance", "naval"] },
+            "severity": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "recognize_claim": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "recognize_claim" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "claim"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "claim": { "$ref": "#/$defs/nonEmpty" },
+            "public": { "type": "boolean", "default": true }
+          }
+        }
+      }
+    },
+
+    "adjust_tax_rate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "adjust_tax_rate" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["new_tax_rate"],
+          "properties": {
+            "new_tax_rate": { "type": "number", "minimum": 0, "maximum": 0.9 },
+            "rationale": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "issue_debt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "issue_debt" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["amount", "interest_rate_annual", "maturity_weeks"],
+          "properties": {
+            "amount": { "$ref": "#/$defs/money" },
+            "interest_rate_annual": { "type": "number", "minimum": 0, "maximum": 1 },
+            "maturity_weeks": { "type": "integer", "minimum": 4, "maximum": 520 }
+          }
+        }
+      }
+    },
+
+    "cut_spending": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "cut_spending" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["category", "weekly_amount", "duration_weeks"],
+          "properties": {
+            "category": { "type": "string", "enum": ["military", "administration", "court", "infrastructure", "subsidies"] },
+            "weekly_amount": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "fund_project": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "fund_project" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["project_type", "budget", "duration_weeks"],
+          "properties": {
+            "project_type": { "type": "string", "enum": ["infrastructure", "fortifications", "bureaucracy", "schools", "shipyards"] },
+            "province_id": { "$ref": "#/$defs/uuid" },
+            "budget": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "subsidize_sector": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "subsidize_sector" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sector", "weekly_amount", "duration_weeks"],
+          "properties": {
+            "sector": { "type": "string", "enum": ["grain", "textiles", "arms", "shipping", "mining"] },
+            "weekly_amount": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "appoint_official": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "appoint_official" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["office_id", "character_id"],
+          "properties": {
+            "office_id": { "$ref": "#/$defs/uuid" },
+            "character_id": { "$ref": "#/$defs/uuid" }
+          }
+        }
+      }
+    },
+
+    "reform_law": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "reform_law" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["law_key", "change"],
+          "properties": {
+            "law_key": { "$ref": "#/$defs/nonEmpty" },
+            "change": { "type": "string", "enum": ["enact", "repeal", "amend"] },
+            "political_capital_cost": { "type": "integer", "minimum": 0, "maximum": 100, "default": 10 }
+          }
+        }
+      }
+    },
+
+    "crackdown": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "crackdown" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["intensity", "duration_weeks", "budget"],
+          "properties": {
+            "province_id": { "$ref": "#/$defs/uuid" },
+            "intensity": { "type": "integer", "minimum": 1, "maximum": 5 },
+            "duration_weeks": { "$ref": "#/$defs/weeks" },
+            "budget": { "$ref": "#/$defs/money" }
+          }
+        }
+      }
+    },
+
+    "mobilize": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "mobilize" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["scope"],
+          "properties": {
+            "scope": { "type": "string", "enum": ["partial", "general"] },
+            "target_readiness": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.75 }
+          }
+        }
+      }
+    },
+
+    "raise_levies": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "raise_levies" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["manpower"],
+          "properties": {
+            "province_id": { "$ref": "#/$defs/uuid" },
+            "manpower": { "type": "integer", "minimum": 0 }
+          }
+        }
+      }
+    },
+
+    "fortify": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "fortify" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["province_id", "level_increase", "budget", "duration_weeks"],
+          "properties": {
+            "province_id": { "$ref": "#/$defs/uuid" },
+            "level_increase": { "type": "integer", "minimum": 1, "maximum": 3 },
+            "budget": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "deploy_force": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "deploy_force" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from_province_id", "to_province_id", "units"],
+          "properties": {
+            "from_province_id": { "$ref": "#/$defs/uuid" },
+            "to_province_id": { "$ref": "#/$defs/uuid" },
+            "units": { "type": "integer", "minimum": 1 }
+          }
+        }
+      }
+    },
+
+    "reorganize_army": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "reorganize_army" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["focus", "budget", "duration_weeks"],
+          "properties": {
+            "focus": { "type": "string", "enum": ["training", "logistics", "officer_corps", "standardization"] },
+            "budget": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" }
+          }
+        }
+      }
+    },
+
+    "fund_faction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "fund_faction" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "faction", "weekly_amount", "duration_weeks"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "faction": { "$ref": "#/$defs/nonEmpty" },
+            "weekly_amount": { "$ref": "#/$defs/money" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" },
+            "secrecy": { "type": "string", "enum": ["low", "medium", "high"], "default": "high" }
+          }
+        }
+      }
+    },
+
+    "leak_story": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "leak_story" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target", "narrative"],
+          "properties": {
+            "target": { "$ref": "#/$defs/nonEmpty" },
+            "narrative": { "$ref": "#/$defs/nonEmpty" },
+            "plausibility": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.6 }
+          }
+        }
+      }
+    },
+
+    "freeform_nation_deltas": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "gdp": { "type": "number" },
+        "tax_rate": { "type": "number" },
+        "tax_capacity": { "type": "number" },
+        "compliance": { "type": "number" },
+        "treasury": { "type": "number" },
+        "debt": { "type": "number" },
+        "stability": { "type": "number" },
+        "legitimacy": { "type": "number" },
+        "population": { "type": "number" },
+        "literacy": { "type": "number" },
+        "admin_capacity": { "type": "number" },
+        "corruption": { "type": "number" },
+        "manpower_pool": { "type": "number" },
+        "force_size": { "type": "number" },
+        "readiness": { "type": "number" },
+        "supply": { "type": "number" },
+        "war_exhaustion": { "type": "number" },
+        "tech_level_mil": { "type": "number" }
+      }
+    },
+
+    "freeform_province_deltas": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "population": { "type": "number" },
+        "productivity": { "type": "number" },
+        "infrastructure": { "type": "number" },
+        "unrest": { "type": "number" },
+        "compliance_local": { "type": "number" },
+        "garrison": { "type": "number" }
+      }
+    },
+
+    "freeform_relation_delta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["target_nation_id", "delta"],
+      "properties": {
+        "from_nation_id": { "$ref": "#/$defs/uuid" },
+        "target_nation_id": { "$ref": "#/$defs/uuid" },
+        "delta": { "type": "number", "minimum": -100, "maximum": 100 },
+        "set_at_war": { "type": "boolean" },
+        "add_treaties": { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" } },
+        "remove_treaties": { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" } }
+      }
+    },
+
+    "freeform_effect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "freeform_effect" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["summary"],
+          "properties": {
+            "summary": { "$ref": "#/$defs/nonEmpty" },
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "nation_deltas": { "$ref": "#/$defs/freeform_nation_deltas" },
+            "province_id": { "$ref": "#/$defs/uuid" },
+            "province_deltas": { "$ref": "#/$defs/freeform_province_deltas" },
+            "relation_deltas": { "type": "array", "items": { "$ref": "#/$defs/freeform_relation_delta" } },
+            "limit_deltas": { "type": "boolean" },
+            "note": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "create_committee": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "create_committee" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["topic", "duration_weeks", "budget"],
+          "properties": {
+            "topic": { "$ref": "#/$defs/nonEmpty" },
+            "chair_character_id": { "$ref": "#/$defs/uuid" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" },
+            "budget": { "$ref": "#/$defs/money" }
+          }
+        }
+      }
+    },
+
+    "apply_trajectory_modifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "params"],
+      "properties": {
+        "type": { "const": "apply_trajectory_modifier" },
+        "params": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["target_nation_id", "metric", "delta", "duration_weeks"],
+          "properties": {
+            "target_nation_id": { "$ref": "#/$defs/uuid" },
+            "metric": { "$ref": "#/$defs/trajectory_metric" },
+            "delta": { "type": "number" },
+            "duration_weeks": { "$ref": "#/$defs/weeks" },
+            "note": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,510 @@
+{
+  "polities": [
+    {
+      "polity": "Kingdom of England",
+      "nation": "England",
+      "members": [
+        "United Kingdom"
+      ]
+    },
+    {
+      "polity": "Kingdom of Ireland",
+      "nation": "Ireland",
+      "members": [
+        "Ireland"
+      ]
+    },
+    {
+      "polity": "Kingdom of France",
+      "nation": "France",
+      "members": [
+        "France"
+      ]
+    },
+    {
+      "polity": "Spain",
+      "nation": "Spain",
+      "members": [
+        "Spain"
+      ]
+    },
+    {
+      "polity": "Portugal",
+      "nation": "Portugal",
+      "members": [
+        "Portugal"
+      ]
+    },
+    {
+      "polity": "Holy Roman Empire",
+      "nation": "Germany",
+      "members": [
+        "Germany",
+        "Austria",
+        "Switzerland",
+        "Czechia",
+        "Netherlands",
+        "Belgium",
+        "Luxembourg"
+      ]
+    },
+    {
+      "polity": "Italian States",
+      "nation": "Italy",
+      "members": [
+        "Italy"
+      ]
+    },
+    {
+      "polity": "Kalmar Union",
+      "nation": "Denmark",
+      "members": [
+        "Denmark",
+        "Norway",
+        "Sweden",
+        "Finland",
+        "Iceland"
+      ]
+    },
+    {
+      "polity": "Poland-Lithuania",
+      "nation": "Poland",
+      "members": [
+        "Poland",
+        "Lithuania",
+        "Belarus",
+        "Ukraine"
+      ]
+    },
+    {
+      "polity": "Kingdom of Hungary",
+      "nation": "Hungary",
+      "members": [
+        "Hungary"
+      ]
+    },
+    {
+      "polity": "Ottoman Empire",
+      "nation": "Turkey",
+      "members": [
+        "Turkey",
+        "Greece",
+        "Bulgaria",
+        "Romania",
+        "Serbia",
+        "Bosnia and Herzegovina",
+        "Albania",
+        "North Macedonia",
+        "Montenegro",
+        "Kosovo",
+        "Moldova"
+      ]
+    },
+    {
+      "polity": "Muscovy",
+      "nation": "Russia",
+      "members": [
+        "Russia"
+      ]
+    },
+    {
+      "polity": "Mamluk Sultanate",
+      "nation": "Egypt",
+      "members": [
+        "Egypt",
+        "Syria",
+        "Lebanon",
+        "Jordan",
+        "Israel",
+        "Palestine"
+      ]
+    },
+    {
+      "polity": "Maghreb Sultanates",
+      "nation": "Morocco",
+      "members": [
+        "Morocco",
+        "Algeria",
+        "Tunisia",
+        "Libya"
+      ]
+    },
+    {
+      "polity": "Timurid Persia",
+      "nation": "Iran",
+      "members": [
+        "Iran",
+        "Afghanistan"
+      ]
+    },
+    {
+      "polity": "Arabian Peninsula",
+      "nation": "Saudi Arabia",
+      "members": [
+        "Saudi Arabia",
+        "Yemen",
+        "Oman",
+        "United Arab Emirates",
+        "Qatar",
+        "Bahrain",
+        "Kuwait"
+      ]
+    },
+    {
+      "polity": "Songhai Empire",
+      "nation": "Mali",
+      "members": [
+        "Mali",
+        "Niger",
+        "Burkina Faso"
+      ]
+    },
+    {
+      "polity": "Guinea Coast Kingdoms",
+      "nation": "Ghana",
+      "members": [
+        "Benin",
+        "Cote d'Ivoire",
+        "Ghana",
+        "Ivory Coast",
+        "Togo"
+      ]
+    },
+    {
+      "polity": "Hausa States",
+      "nation": "Nigeria",
+      "members": [
+        "Nigeria"
+      ]
+    },
+    {
+      "polity": "Mande Coast",
+      "nation": "Senegal",
+      "members": [
+        "Senegal",
+        "Gambia",
+        "Guinea",
+        "Guinea-Bissau",
+        "Sierra Leone",
+        "Liberia"
+      ]
+    },
+    {
+      "polity": "Ethiopian Empire",
+      "nation": "Ethiopia",
+      "members": [
+        "Ethiopia",
+        "Eritrea"
+      ]
+    },
+    {
+      "polity": "Adal Sultanate",
+      "nation": "Somalia",
+      "members": [
+        "Somalia",
+        "Djibouti"
+      ]
+    },
+    {
+      "polity": "Swahili Coast",
+      "nation": "Tanzania",
+      "members": [
+        "Kenya",
+        "Tanzania",
+        "Mozambique"
+      ]
+    },
+    {
+      "polity": "Kingdom of Kongo",
+      "nation": "Congo",
+      "members": [
+        "Angola",
+        "Congo",
+        "Dem. Rep. Congo",
+        "Democratic Republic of the Congo",
+        "Gabon",
+        "Republic of the Congo"
+      ]
+    },
+    {
+      "polity": "Great Lakes Kingdoms",
+      "nation": "Uganda",
+      "members": [
+        "Uganda",
+        "Rwanda",
+        "Burundi"
+      ]
+    },
+    {
+      "polity": "Southern Kingdoms",
+      "nation": "South Africa",
+      "members": [
+        "Botswana",
+        "Lesotho",
+        "Malawi",
+        "Namibia",
+        "South Africa",
+        "Zambia",
+        "Zimbabwe",
+        "eSwatini"
+      ]
+    },
+    {
+      "polity": "Madagascar Kingdoms",
+      "nation": "Madagascar",
+      "members": [
+        "Madagascar"
+      ]
+    },
+    {
+      "polity": "Ming China",
+      "nation": "China",
+      "members": [
+        "China"
+      ]
+    },
+    {
+      "polity": "Northern Yuan",
+      "nation": "Mongolia",
+      "members": [
+        "Mongolia"
+      ]
+    },
+    {
+      "polity": "Joseon Korea",
+      "nation": "South Korea",
+      "members": [
+        "South Korea",
+        "North Korea"
+      ]
+    },
+    {
+      "polity": "Ashikaga Shogunate",
+      "nation": "Japan",
+      "members": [
+        "Japan"
+      ]
+    },
+    {
+      "polity": "Delhi Sultanate",
+      "nation": "India",
+      "members": [
+        "India",
+        "Pakistan",
+        "Bangladesh"
+      ]
+    },
+    {
+      "polity": "Himalayan Kingdoms",
+      "nation": "Nepal",
+      "members": [
+        "Nepal",
+        "Bhutan"
+      ]
+    },
+    {
+      "polity": "Vijayanagara",
+      "nation": "India",
+      "members": [
+        "Sri Lanka"
+      ]
+    },
+    {
+      "polity": "Timurid Realm",
+      "nation": "Uzbekistan",
+      "members": [
+        "Uzbekistan",
+        "Turkmenistan",
+        "Kyrgyzstan",
+        "Tajikistan",
+        "Kazakhstan"
+      ]
+    },
+    {
+      "polity": "Ayutthaya",
+      "nation": "Thailand",
+      "members": [
+        "Thailand"
+      ]
+    },
+    {
+      "polity": "Dai Viet",
+      "nation": "Vietnam",
+      "members": [
+        "Vietnam"
+      ]
+    },
+    {
+      "polity": "Lan Xang",
+      "nation": "Laos",
+      "members": [
+        "Laos"
+      ]
+    },
+    {
+      "polity": "Khmer Kingdom",
+      "nation": "Cambodia",
+      "members": [
+        "Cambodia"
+      ]
+    },
+    {
+      "polity": "Taungoo",
+      "nation": "Myanmar",
+      "members": [
+        "Myanmar"
+      ]
+    },
+    {
+      "polity": "Malacca Sultanate",
+      "nation": "Malaysia",
+      "members": [
+        "Malaysia",
+        "Singapore",
+        "Brunei"
+      ]
+    },
+    {
+      "polity": "Majapahit",
+      "nation": "Indonesia",
+      "members": [
+        "Indonesia"
+      ]
+    },
+    {
+      "polity": "Philippine Polities",
+      "nation": "Philippines",
+      "members": [
+        "Philippines"
+      ]
+    },
+    {
+      "polity": "Aztec Empire",
+      "nation": "Mexico",
+      "members": [
+        "Mexico"
+      ]
+    },
+    {
+      "polity": "Maya States",
+      "nation": "Guatemala",
+      "members": [
+        "Guatemala",
+        "Belize",
+        "El Salvador",
+        "Honduras"
+      ]
+    },
+    {
+      "polity": "Isthmian Chiefdoms",
+      "nation": "Panama",
+      "members": [
+        "Nicaragua",
+        "Costa Rica",
+        "Panama"
+      ]
+    },
+    {
+      "polity": "Inca Empire",
+      "nation": "Peru",
+      "members": [
+        "Peru",
+        "Bolivia",
+        "Ecuador"
+      ]
+    },
+    {
+      "polity": "Northern Andes",
+      "nation": "Colombia",
+      "members": [
+        "Colombia",
+        "Venezuela"
+      ]
+    },
+    {
+      "polity": "Tupi Confederations",
+      "nation": "Brazil",
+      "members": [
+        "Brazil"
+      ]
+    },
+    {
+      "polity": "Southern Tribes",
+      "nation": "Argentina",
+      "members": [
+        "Argentina",
+        "Chile",
+        "Uruguay",
+        "Paraguay"
+      ]
+    },
+    {
+      "polity": "Guiana Polities",
+      "nation": "Guyana",
+      "members": [
+        "Guyana",
+        "Suriname"
+      ]
+    },
+    {
+      "polity": "Caribbean Chiefdoms",
+      "nation": "Cuba",
+      "members": [
+        "Antigua and Barbuda",
+        "Bahamas",
+        "Barbados",
+        "Cuba",
+        "Dominica",
+        "Dominican Republic",
+        "Grenada",
+        "Haiti",
+        "Jamaica",
+        "Saint Kitts and Nevis",
+        "Saint Lucia",
+        "Saint Vincent and the Grenadines",
+        "The Bahamas",
+        "Trinidad and Tobago"
+      ]
+    },
+    {
+      "polity": "North American Nations",
+      "nation": "United States of America",
+      "members": [
+        "United States of America",
+        "Canada"
+      ]
+    },
+    {
+      "polity": "Aboriginal Australia",
+      "nation": "Australia",
+      "members": [
+        "Australia"
+      ]
+    },
+    {
+      "polity": "Maori Polynesia",
+      "nation": "New Zealand",
+      "members": [
+        "New Zealand"
+      ]
+    },
+    {
+      "polity": "Oceanic Polities",
+      "nation": "Fiji",
+      "members": [
+        "Papua New Guinea",
+        "Solomon Islands",
+        "Vanuatu",
+        "Fiji",
+        "Samoa",
+        "Tonga",
+        "Micronesia",
+        "Palau",
+        "Marshall Islands",
+        "Kiribati",
+        "Tuvalu",
+        "Nauru"
+      ]
+    }
+  ]
+}

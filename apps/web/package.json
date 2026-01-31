@@ -1,0 +1,30 @@
+{
+  "name": "@thecourt/web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "echo 'lint (repo-level)';",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@thecourt/shared": "workspace:*",
+    "maplibre-gl": "^4.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "jsdom": "^24.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "@vitejs/plugin-react": "^4.3.4",
+    "vitest": "^2.1.8"
+  }
+}

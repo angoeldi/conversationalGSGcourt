@@ -1,0 +1,40 @@
+{
+  "splits": [
+    {
+      "admin": "United Kingdom",
+      "polity": "Kingdom of Scotland",
+      "nation": "United Kingdom",
+      "bbox": [-8.5, 55.0, 2.5, 60.9]
+    },
+    {
+      "admin": "Spain",
+      "polity": "Emirate of Granada",
+      "nation": "Spain",
+      "bbox": [-6.6, 36.0, -1.0, 38.7]
+    },
+    {
+      "admin": "Spain",
+      "polity": "Crown of Aragon",
+      "nation": "Spain",
+      "bbox": [-1.6, 39.0, 3.6, 43.6]
+    },
+    {
+      "admin": "France",
+      "polity": "Duchy of Brittany",
+      "nation": "France",
+      "bbox": [-5.5, 47.0, -0.5, 49.3]
+    },
+    {
+      "admin": "Italy",
+      "polity": "Kingdom of Naples",
+      "nation": "Italy",
+      "bbox": [7.5, 36.0, 19.0, 41.6]
+    },
+    {
+      "admin": "Italy",
+      "polity": "Papal States",
+      "nation": "Italy",
+      "bbox": [8.0, 41.6, 16.0, 44.0]
+    }
+  ]
+}

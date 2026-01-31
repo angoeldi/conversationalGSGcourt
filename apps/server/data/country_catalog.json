@@ -1,0 +1,4038 @@
+{
+  "version": "ne_110m_admin_0_countries",
+  "generated_at": "2026-01-28T02:18:01.655Z",
+  "entries": [
+    {
+      "nation_id": "d02dc70e-3b90-5085-9c43-a1a8d6c4d576",
+      "name": "Fiji",
+      "tag": "FJI",
+      "map_aliases": [
+        "Fiji",
+        "Republic of Fiji"
+      ],
+      "summary": "Fiji is a sovereign state in Melanesia. Formal name: Republic of Fiji. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 889953,
+      "gdp_md_est": 5496,
+      "continent": "Oceania",
+      "subregion": "Melanesia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "a1c3ec58-6420-5d81-b652-d7f83148bf75",
+      "name": "United Republic of Tanzania",
+      "tag": "TZA",
+      "map_aliases": [
+        "United Republic of Tanzania",
+        "Tanzania",
+        "Tanz."
+      ],
+      "summary": "United Republic of Tanzania is a sovereign state in Eastern Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 58005463,
+      "gdp_md_est": 63177,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "58a3ca8d-cf64-59ae-a4df-e0e4884e79a9",
+      "name": "Western Sahara",
+      "tag": "ESH",
+      "map_aliases": [
+        "Western Sahara",
+        "W. Sahara",
+        "Sahrawi Arab Democratic Republic",
+        "W. Sah."
+      ],
+      "summary": "Western Sahara is a sovereign state in Northern Africa. Formal name: Sahrawi Arab Democratic Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 603253,
+      "gdp_md_est": 907,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "1286176e-4354-5ae2-b9fb-b5a3675e2bd6",
+      "name": "Canada",
+      "tag": "CAN",
+      "map_aliases": [
+        "Canada",
+        "Can."
+      ],
+      "summary": "Canada is a sovereign state in Northern America. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 37589262,
+      "gdp_md_est": 1736425,
+      "continent": "North America",
+      "subregion": "Northern America",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "27c76a37-1ea6-5e1c-8cc8-c0034adec96d",
+      "name": "United States of America",
+      "tag": "USA",
+      "map_aliases": [
+        "United States of America",
+        "United States",
+        "U.S.A."
+      ],
+      "summary": "United States of America is a sovereign state in Northern America. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 328239523,
+      "gdp_md_est": 21433226,
+      "continent": "North America",
+      "subregion": "Northern America",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "05fb5c54-c2cc-5e1c-b6a8-a048d8a3a56e",
+      "name": "Kazakhstan",
+      "tag": "KAZ",
+      "map_aliases": [
+        "Kazakhstan",
+        "Republic of Kazakhstan",
+        "Kaz."
+      ],
+      "summary": "Kazakhstan is a sovereign state in Central Asia. Formal name: Republic of Kazakhstan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 18513930,
+      "gdp_md_est": 181665,
+      "continent": "Asia",
+      "subregion": "Central Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "dec621a3-45d1-576e-bd61-f7e60ec74d55",
+      "name": "Uzbekistan",
+      "tag": "UZB",
+      "map_aliases": [
+        "Uzbekistan",
+        "Republic of Uzbekistan",
+        "Uzb."
+      ],
+      "summary": "Uzbekistan is a sovereign state in Central Asia. Formal name: Republic of Uzbekistan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 33580650,
+      "gdp_md_est": 57921,
+      "continent": "Asia",
+      "subregion": "Central Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "88dbad17-9fa3-552e-8412-1f008ea525c1",
+      "name": "Papua New Guinea",
+      "tag": "PNG",
+      "map_aliases": [
+        "Papua New Guinea",
+        "Independent State of Papua New Guinea",
+        "P.N.G."
+      ],
+      "summary": "Papua New Guinea is a sovereign state in Melanesia. Formal name: Independent State of Papua New Guinea. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 8776109,
+      "gdp_md_est": 24829,
+      "continent": "Oceania",
+      "subregion": "Melanesia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "aae6f634-0858-5f66-b1d2-8f3a92be33d7",
+      "name": "Indonesia",
+      "tag": "IDN",
+      "map_aliases": [
+        "Indonesia",
+        "Republic of Indonesia",
+        "Indo."
+      ],
+      "summary": "Indonesia is a sovereign state in South-Eastern Asia. Formal name: Republic of Indonesia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 270625568,
+      "gdp_md_est": 1119190,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "4. Emerging region: MIKT",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "f2b2891c-1e7e-5870-9dce-0ba277110ca3",
+      "name": "Argentina",
+      "tag": "ARG",
+      "map_aliases": [
+        "Argentina",
+        "Argentine Republic",
+        "Arg."
+      ],
+      "summary": "Argentina is a sovereign state in South America. Formal name: Argentine Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 44938712,
+      "gdp_md_est": 445445,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "ba4ffdcd-6359-5120-835b-bcf53504af78",
+      "name": "Chile",
+      "tag": "CHL",
+      "map_aliases": [
+        "Chile",
+        "Republic of Chile"
+      ],
+      "summary": "Chile is a sovereign state in South America. Formal name: Republic of Chile.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 18952038,
+      "gdp_md_est": 282318,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "067b4c6e-c914-58e6-bda6-26f1eec1a567",
+      "name": "Democratic Republic of the Congo",
+      "tag": "COD",
+      "map_aliases": [
+        "Democratic Republic of the Congo",
+        "Dem. Rep. Congo",
+        "D.R.C."
+      ],
+      "summary": "Democratic Republic of the Congo is a sovereign state in Middle Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 86790567,
+      "gdp_md_est": 50400,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "d57c0b28-0854-5c0f-8031-7f4d7db85a5c",
+      "name": "Somalia",
+      "tag": "SOM",
+      "map_aliases": [
+        "Somalia",
+        "Federal Republic of Somalia",
+        "Som."
+      ],
+      "summary": "Somalia is a sovereign state in Eastern Africa. Formal name: Federal Republic of Somalia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 10192317.3,
+      "gdp_md_est": 4719,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "a79734dd-dec7-5607-b511-025f6213b79d",
+      "name": "Kenya",
+      "tag": "KEN",
+      "map_aliases": [
+        "Kenya",
+        "Republic of Kenya",
+        "Ken."
+      ],
+      "summary": "Kenya is a sovereign state in Eastern Africa. Formal name: Republic of Kenya.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 52573973,
+      "gdp_md_est": 95503,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "5. Emerging region: G20",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "8a839ce1-9a70-5e46-ac33-c2e5534d639b",
+      "name": "Sudan",
+      "tag": "SDN",
+      "map_aliases": [
+        "Sudan",
+        "Republic of the Sudan"
+      ],
+      "summary": "Sudan is a sovereign state in Northern Africa. Formal name: Republic of the Sudan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 42813238,
+      "gdp_md_est": 30513,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "a3490590-fb4b-5ef1-a3d3-5de5604c6e19",
+      "name": "Chad",
+      "tag": "TCD",
+      "map_aliases": [
+        "Chad",
+        "Republic of Chad"
+      ],
+      "summary": "Chad is a sovereign state in Middle Africa. Formal name: Republic of Chad.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 15946876,
+      "gdp_md_est": 11314,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "4f1fb22f-388a-5aa0-be4f-7e91e35e4680",
+      "name": "Haiti",
+      "tag": "HTI",
+      "map_aliases": [
+        "Haiti",
+        "Republic of Haiti"
+      ],
+      "summary": "Haiti is a sovereign state in Caribbean. Formal name: Republic of Haiti. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 11263077,
+      "gdp_md_est": 14332,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "af85f9a2-a090-5d4d-a0ef-73d1c6e54e68",
+      "name": "Dominican Republic",
+      "tag": "DOM",
+      "map_aliases": [
+        "Dominican Republic",
+        "Dominican Rep.",
+        "Dom. Rep."
+      ],
+      "summary": "Dominican Republic is a sovereign state in Caribbean. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 10738958,
+      "gdp_md_est": 88941,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "e77abf97-f222-544c-9cd0-89012acc55e0",
+      "name": "Russia",
+      "tag": "RUS",
+      "map_aliases": [
+        "Russia",
+        "Russian Federation",
+        "Rus."
+      ],
+      "summary": "Russia is a sovereign state in Eastern Europe. Formal name: Russian Federation.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 144373535,
+      "gdp_md_est": 1699876,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "3. Emerging region: BRIC",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "859fb089-333c-50f3-9698-b38088c3cbfb",
+      "name": "The Bahamas",
+      "tag": "BHS",
+      "map_aliases": [
+        "The Bahamas",
+        "Bahamas",
+        "Commonwealth of the Bahamas",
+        "Bhs."
+      ],
+      "summary": "The Bahamas is a sovereign state in Caribbean. Formal name: Commonwealth of the Bahamas. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 389482,
+      "gdp_md_est": 13578,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "81ea48c2-8907-5ff1-a465-f23b2e404f63",
+      "name": "Falkland Islands",
+      "tag": "FLK",
+      "map_aliases": [
+        "Falkland Islands",
+        "Falkland Is.",
+        "Falkland Islands / Malvinas",
+        "United Kingdom",
+        "Flk. Is."
+      ],
+      "summary": "Falkland Islands is a sovereign state in South America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 3398,
+      "gdp_md_est": 282,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "bfccd9e5-525e-5c44-acf4-af4281428f83",
+      "name": "Norway",
+      "tag": "NOR",
+      "map_aliases": [
+        "Norway",
+        "Kingdom of Norway",
+        "Nor."
+      ],
+      "summary": "Norway is a sovereign state in Northern Europe. Formal name: Kingdom of Norway.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 5347896,
+      "gdp_md_est": 403336,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "a9bf84e2-0e88-55a3-868b-d036093668ca",
+      "name": "Greenland",
+      "tag": "GRL",
+      "map_aliases": [
+        "Greenland",
+        "Denmark",
+        "Grlnd."
+      ],
+      "summary": "Greenland is a sovereign state in Northern America. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 56225,
+      "gdp_md_est": 3051,
+      "continent": "North America",
+      "subregion": "Northern America",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "d7b5e946-4714-52e1-a914-1555dd420c0e",
+      "name": "French Southern and Antarctic Lands",
+      "tag": "ATF",
+      "map_aliases": [
+        "French Southern and Antarctic Lands",
+        "Fr. S. Antarctic Lands",
+        "Territory of the French Southern and Antarctic Lands",
+        "Fr. S. and Antarctic Lands",
+        "France",
+        "Fr. S.A.L."
+      ],
+      "summary": "French Southern and Antarctic Lands is a sovereign state in Seven seas (open ocean). Formal name: Territory of the French Southern and Antarctic Lands.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 140,
+      "gdp_md_est": 16,
+      "continent": "Seven seas (open ocean)",
+      "subregion": "Seven seas (open ocean)",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "edc6dcdb-e957-523b-8400-5a5cb364d08b",
+      "name": "East Timor",
+      "tag": "TLS",
+      "map_aliases": [
+        "East Timor",
+        "Timor-Leste",
+        "Democratic Republic of Timor-Leste",
+        "T.L."
+      ],
+      "summary": "East Timor is a sovereign state in South-Eastern Asia. Formal name: Democratic Republic of Timor-Leste.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 1293119,
+      "gdp_md_est": 2017,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "7b548729-8e30-5141-a9fb-bcd5c8f4ec78",
+      "name": "South Africa",
+      "tag": "ZAF",
+      "map_aliases": [
+        "South Africa",
+        "Republic of South Africa",
+        "S.Af."
+      ],
+      "summary": "South Africa is a sovereign state in Southern Africa. Formal name: Republic of South Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 58558270,
+      "gdp_md_est": 351431,
+      "continent": "Africa",
+      "subregion": "Southern Africa",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "4bd844c4-3d9a-5ba0-8549-2a4573614fc2",
+      "name": "Lesotho",
+      "tag": "LSO",
+      "map_aliases": [
+        "Lesotho",
+        "Kingdom of Lesotho",
+        "Les."
+      ],
+      "summary": "Lesotho is a sovereign state in Southern Africa. Formal name: Kingdom of Lesotho.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 2125268,
+      "gdp_md_est": 2376,
+      "continent": "Africa",
+      "subregion": "Southern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "4b331a31-dc56-5504-b50c-93f0aa0c24eb",
+      "name": "Mexico",
+      "tag": "MEX",
+      "map_aliases": [
+        "Mexico",
+        "United Mexican States",
+        "Mex."
+      ],
+      "summary": "Mexico is a sovereign state in Central America. Formal name: United Mexican States. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 127575529,
+      "gdp_md_est": 1268870,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "4. Emerging region: MIKT",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "6ca77991-eea9-52c2-8024-1bb5f3bc6aa3",
+      "name": "Uruguay",
+      "tag": "URY",
+      "map_aliases": [
+        "Uruguay",
+        "Oriental Republic of Uruguay",
+        "Ury."
+      ],
+      "summary": "Uruguay is a sovereign state in South America. Formal name: Oriental Republic of Uruguay.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 3461734,
+      "gdp_md_est": 56045,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "62c16e8d-ac98-5dcb-bb5b-c5b073180fd0",
+      "name": "Brazil",
+      "tag": "BRA",
+      "map_aliases": [
+        "Brazil",
+        "Federative Republic of Brazil"
+      ],
+      "summary": "Brazil is a sovereign state in South America. Formal name: Federative Republic of Brazil.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 211049527,
+      "gdp_md_est": 1839758,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "3. Emerging region: BRIC",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "2f6435cc-dfdd-5406-90ce-99f5837daf1e",
+      "name": "Bolivia",
+      "tag": "BOL",
+      "map_aliases": [
+        "Bolivia",
+        "Plurinational State of Bolivia"
+      ],
+      "summary": "Bolivia is a sovereign state in South America. Formal name: Plurinational State of Bolivia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 11513100,
+      "gdp_md_est": 40895,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "6d37d314-ca5d-5b48-b0e3-f69d0f5bce6f",
+      "name": "Peru",
+      "tag": "PER",
+      "map_aliases": [
+        "Peru",
+        "Republic of Peru"
+      ],
+      "summary": "Peru is a sovereign state in South America. Formal name: Republic of Peru.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 32510453,
+      "gdp_md_est": 226848,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "7e671cd1-f184-5147-a2f7-510bd836d5c5",
+      "name": "Colombia",
+      "tag": "COL",
+      "map_aliases": [
+        "Colombia",
+        "Republic of Colombia",
+        "Col."
+      ],
+      "summary": "Colombia is a sovereign state in South America. Formal name: Republic of Colombia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 50339443,
+      "gdp_md_est": 323615,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "8492ea9a-63b6-5902-81ad-070a1ed0be3e",
+      "name": "Panama",
+      "tag": "PAN",
+      "map_aliases": [
+        "Panama",
+        "Republic of Panama",
+        "Pan."
+      ],
+      "summary": "Panama is a sovereign state in Central America. Formal name: Republic of Panama. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 4246439,
+      "gdp_md_est": 66800,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "fb1a6310-6c4b-511e-bc24-8cc2aa324f0c",
+      "name": "Costa Rica",
+      "tag": "CRI",
+      "map_aliases": [
+        "Costa Rica",
+        "Republic of Costa Rica",
+        "C.R."
+      ],
+      "summary": "Costa Rica is a sovereign state in Central America. Formal name: Republic of Costa Rica. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 5047561,
+      "gdp_md_est": 61801,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "ec4b22d5-74ef-51a2-ac6b-ee11fe663447",
+      "name": "Nicaragua",
+      "tag": "NIC",
+      "map_aliases": [
+        "Nicaragua",
+        "Republic of Nicaragua",
+        "Nic."
+      ],
+      "summary": "Nicaragua is a sovereign state in Central America. Formal name: Republic of Nicaragua. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 6545502,
+      "gdp_md_est": 12520,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "1559a186-493b-51be-8ca6-8d3ab75e2e9c",
+      "name": "Honduras",
+      "tag": "HND",
+      "map_aliases": [
+        "Honduras",
+        "Republic of Honduras",
+        "Hond."
+      ],
+      "summary": "Honduras is a sovereign state in Central America. Formal name: Republic of Honduras. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 9746117,
+      "gdp_md_est": 25095,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "d9738e7d-bc8c-5660-b9eb-f32b76d3becb",
+      "name": "El Salvador",
+      "tag": "SLV",
+      "map_aliases": [
+        "El Salvador",
+        "Republic of El Salvador",
+        "El. S."
+      ],
+      "summary": "El Salvador is a sovereign state in Central America. Formal name: Republic of El Salvador. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 6453553,
+      "gdp_md_est": 27022,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "b90f0d5c-ef95-5c24-adfc-64de4266990b",
+      "name": "Guatemala",
+      "tag": "GTM",
+      "map_aliases": [
+        "Guatemala",
+        "Republic of Guatemala",
+        "Guat."
+      ],
+      "summary": "Guatemala is a sovereign state in Central America. Formal name: Republic of Guatemala. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 16604026,
+      "gdp_md_est": 76710,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "1a7c697c-15a7-5eaa-b4fd-74cefddee54f",
+      "name": "Belize",
+      "tag": "BLZ",
+      "map_aliases": [
+        "Belize"
+      ],
+      "summary": "Belize is a sovereign state in Central America. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 390353,
+      "gdp_md_est": 1879,
+      "continent": "North America",
+      "subregion": "Central America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "05067072-b751-5dd8-b404-4e26ace1f81b",
+      "name": "Venezuela",
+      "tag": "VEN",
+      "map_aliases": [
+        "Venezuela",
+        "Bolivarian Republic of Venezuela",
+        "Ven."
+      ],
+      "summary": "Venezuela is a sovereign state in South America. Formal name: Bolivarian Republic of Venezuela.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 28515829,
+      "gdp_md_est": 482359,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "7f1ff7fe-5c6f-59e1-8c2b-8047362042de",
+      "name": "Guyana",
+      "tag": "GUY",
+      "map_aliases": [
+        "Guyana",
+        "Co-operative Republic of Guyana",
+        "Guy."
+      ],
+      "summary": "Guyana is a sovereign state in South America. Formal name: Co-operative Republic of Guyana.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 782766,
+      "gdp_md_est": 5173,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "8d00e9d4-ec38-5ada-97f1-985435e8e27b",
+      "name": "Suriname",
+      "tag": "SUR",
+      "map_aliases": [
+        "Suriname",
+        "Republic of Suriname",
+        "Sur."
+      ],
+      "summary": "Suriname is a sovereign state in South America. Formal name: Republic of Suriname.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 581363,
+      "gdp_md_est": 3697,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "6c3f68ad-c589-59d5-9edf-71bd2b330807",
+      "name": "France",
+      "tag": "FRA",
+      "map_aliases": [
+        "France",
+        "French Republic",
+        "Fr."
+      ],
+      "summary": "France is a sovereign state in Western Europe. Formal name: French Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 67059887,
+      "gdp_md_est": 2715518,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "b5575efa-314c-59d7-9a14-ead088dbd2d5",
+      "name": "Ecuador",
+      "tag": "ECU",
+      "map_aliases": [
+        "Ecuador",
+        "Republic of Ecuador",
+        "Ecu."
+      ],
+      "summary": "Ecuador is a sovereign state in South America. Formal name: Republic of Ecuador.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 17373662,
+      "gdp_md_est": 107435,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "0ea13865-1616-5182-a972-9b35f540984d",
+      "name": "Puerto Rico",
+      "tag": "PRI",
+      "map_aliases": [
+        "Puerto Rico",
+        "Commonwealth of Puerto Rico",
+        "United States of America",
+        "P.R."
+      ],
+      "summary": "Puerto Rico is a sovereign state in Caribbean. Formal name: Commonwealth of Puerto Rico. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 3193694,
+      "gdp_md_est": 104988,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "50d0b125-1f4a-5007-b91b-907dafe2362c",
+      "name": "Jamaica",
+      "tag": "JAM",
+      "map_aliases": [
+        "Jamaica",
+        "Jam."
+      ],
+      "summary": "Jamaica is a sovereign state in Caribbean. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2948279,
+      "gdp_md_est": 16458,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "ccc1d793-7718-5218-ae1e-84d7856f19c3",
+      "name": "Cuba",
+      "tag": "CUB",
+      "map_aliases": [
+        "Cuba",
+        "Republic of Cuba"
+      ],
+      "summary": "Cuba is a sovereign state in Caribbean. Formal name: Republic of Cuba. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 11333483,
+      "gdp_md_est": 100023,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "68423a81-2424-5f36-8f91-831d9c7d3336",
+      "name": "Zimbabwe",
+      "tag": "ZWE",
+      "map_aliases": [
+        "Zimbabwe",
+        "Republic of Zimbabwe",
+        "Zimb."
+      ],
+      "summary": "Zimbabwe is a sovereign state in Eastern Africa. Formal name: Republic of Zimbabwe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 14645468,
+      "gdp_md_est": 21440,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "5. Emerging region: G20",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "97cfe7ac-9f60-53ee-8ff7-0e9cd0522fdc",
+      "name": "Botswana",
+      "tag": "BWA",
+      "map_aliases": [
+        "Botswana",
+        "Republic of Botswana",
+        "Bwa."
+      ],
+      "summary": "Botswana is a sovereign state in Southern Africa. Formal name: Republic of Botswana.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2303697,
+      "gdp_md_est": 18340,
+      "continent": "Africa",
+      "subregion": "Southern Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "145ac17f-5e9c-558f-ab62-bf9736c5fed2",
+      "name": "Namibia",
+      "tag": "NAM",
+      "map_aliases": [
+        "Namibia",
+        "Republic of Namibia",
+        "Nam."
+      ],
+      "summary": "Namibia is a sovereign state in Southern Africa. Formal name: Republic of Namibia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2494530,
+      "gdp_md_est": 12366,
+      "continent": "Africa",
+      "subregion": "Southern Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "80bae0b6-7230-569f-855c-40f2c116e49f",
+      "name": "Senegal",
+      "tag": "SEN",
+      "map_aliases": [
+        "Senegal",
+        "Republic of Senegal",
+        "Sen."
+      ],
+      "summary": "Senegal is a sovereign state in Western Africa. Formal name: Republic of Senegal.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 16296364,
+      "gdp_md_est": 23578,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "03edde03-cfa1-5fea-95d4-f73c85941614",
+      "name": "Mali",
+      "tag": "MLI",
+      "map_aliases": [
+        "Mali",
+        "Republic of Mali"
+      ],
+      "summary": "Mali is a sovereign state in Western Africa. Formal name: Republic of Mali.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 19658031,
+      "gdp_md_est": 17279,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "72337ccc-0647-5afa-b3fa-195abb1a5287",
+      "name": "Mauritania",
+      "tag": "MRT",
+      "map_aliases": [
+        "Mauritania",
+        "Islamic Republic of Mauritania",
+        "Mrt."
+      ],
+      "summary": "Mauritania is a sovereign state in Western Africa. Formal name: Islamic Republic of Mauritania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 4525696,
+      "gdp_md_est": 7600,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "53db8e56-7255-5697-b160-665a57b3c172",
+      "name": "Benin",
+      "tag": "BEN",
+      "map_aliases": [
+        "Benin",
+        "Republic of Benin"
+      ],
+      "summary": "Benin is a sovereign state in Western Africa. Formal name: Republic of Benin.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 11801151,
+      "gdp_md_est": 14390,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "3c17e27a-5f18-5553-9e31-41d48c769258",
+      "name": "Niger",
+      "tag": "NER",
+      "map_aliases": [
+        "Niger",
+        "Republic of Niger"
+      ],
+      "summary": "Niger is a sovereign state in Western Africa. Formal name: Republic of Niger.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 23310715,
+      "gdp_md_est": 12911,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "8594446a-2698-5b56-81ce-0f95e14451e3",
+      "name": "Nigeria",
+      "tag": "NGA",
+      "map_aliases": [
+        "Nigeria",
+        "Federal Republic of Nigeria"
+      ],
+      "summary": "Nigeria is a sovereign state in Western Africa. Formal name: Federal Republic of Nigeria.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 200963599,
+      "gdp_md_est": 448120,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "92b1ccd4-5f66-5557-84ad-222510262658",
+      "name": "Cameroon",
+      "tag": "CMR",
+      "map_aliases": [
+        "Cameroon",
+        "Republic of Cameroon",
+        "Cam."
+      ],
+      "summary": "Cameroon is a sovereign state in Middle Africa. Formal name: Republic of Cameroon.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 25876380,
+      "gdp_md_est": 39007,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "66752e4d-0069-579e-9fcf-ccb4f9f168c9",
+      "name": "Togo",
+      "tag": "TGO",
+      "map_aliases": [
+        "Togo",
+        "Togolese Republic"
+      ],
+      "summary": "Togo is a sovereign state in Western Africa. Formal name: Togolese Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 8082366,
+      "gdp_md_est": 5490,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "9c72fe42-33ac-5daa-a2db-0d74fa7547e6",
+      "name": "Ghana",
+      "tag": "GHA",
+      "map_aliases": [
+        "Ghana",
+        "Republic of Ghana"
+      ],
+      "summary": "Ghana is a sovereign state in Western Africa. Formal name: Republic of Ghana.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 30417856,
+      "gdp_md_est": 66983,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "5281a7e0-5452-5d56-9834-2c4ac5796d78",
+      "name": "Ivory Coast",
+      "tag": "CIV",
+      "map_aliases": [
+        "Ivory Coast",
+        "Côte d'Ivoire",
+        "Republic of Ivory Coast",
+        "I.C."
+      ],
+      "summary": "Ivory Coast is a sovereign state in Western Africa. Formal name: Republic of Ivory Coast.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 25716544,
+      "gdp_md_est": 58539,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "690fe56c-b3f7-5dd9-b11c-5496f753214d",
+      "name": "Guinea",
+      "tag": "GIN",
+      "map_aliases": [
+        "Guinea",
+        "Republic of Guinea",
+        "Gin."
+      ],
+      "summary": "Guinea is a sovereign state in Western Africa. Formal name: Republic of Guinea.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 12771246,
+      "gdp_md_est": 12296,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "6133c1db-be3f-5e26-b3b7-4827c4d201d8",
+      "name": "Guinea-Bissau",
+      "tag": "GNB",
+      "map_aliases": [
+        "Guinea-Bissau",
+        "Republic of Guinea-Bissau",
+        "GnB."
+      ],
+      "summary": "Guinea-Bissau is a sovereign state in Western Africa. Formal name: Republic of Guinea-Bissau.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 1920922,
+      "gdp_md_est": 1339,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "f29d639b-4738-5890-8b21-72657f8105f2",
+      "name": "Liberia",
+      "tag": "LBR",
+      "map_aliases": [
+        "Liberia",
+        "Republic of Liberia"
+      ],
+      "summary": "Liberia is a sovereign state in Western Africa. Formal name: Republic of Liberia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 4937374,
+      "gdp_md_est": 3070,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "45edbea3-7035-5bc3-ae71-dc88fc3f744a",
+      "name": "Sierra Leone",
+      "tag": "SLE",
+      "map_aliases": [
+        "Sierra Leone",
+        "Republic of Sierra Leone",
+        "S.L."
+      ],
+      "summary": "Sierra Leone is a sovereign state in Western Africa. Formal name: Republic of Sierra Leone.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 7813215,
+      "gdp_md_est": 4121,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "63c60dc6-19f1-5712-9901-107b547cbc8b",
+      "name": "Burkina Faso",
+      "tag": "BFA",
+      "map_aliases": [
+        "Burkina Faso",
+        "B.F."
+      ],
+      "summary": "Burkina Faso is a sovereign state in Western Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 20321378,
+      "gdp_md_est": 15990,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "1d28345f-aeaf-5997-95b4-4a4438fead10",
+      "name": "Central African Republic",
+      "tag": "CAF",
+      "map_aliases": [
+        "Central African Republic",
+        "Central African Rep.",
+        "C.A.R."
+      ],
+      "summary": "Central African Republic is a sovereign state in Middle Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 4745185,
+      "gdp_md_est": 2220,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "095951b3-57e8-565a-85ba-4172ec3b3edc",
+      "name": "Republic of the Congo",
+      "tag": "COG",
+      "map_aliases": [
+        "Republic of the Congo",
+        "Congo",
+        "Rep. Congo"
+      ],
+      "summary": "Republic of the Congo is a sovereign state in Middle Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 5380508,
+      "gdp_md_est": 12267,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "5e0d8d9d-84ad-50ce-8216-f2b47f253133",
+      "name": "Gabon",
+      "tag": "GAB",
+      "map_aliases": [
+        "Gabon",
+        "Gabonese Republic"
+      ],
+      "summary": "Gabon is a sovereign state in Middle Africa. Formal name: Gabonese Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2172579,
+      "gdp_md_est": 16874,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "4cf1f753-0177-5dec-8f89-a226503450e6",
+      "name": "Equatorial Guinea",
+      "tag": "GNQ",
+      "map_aliases": [
+        "Equatorial Guinea",
+        "Eq. Guinea",
+        "Republic of Equatorial Guinea",
+        "Eq. G."
+      ],
+      "summary": "Equatorial Guinea is a sovereign state in Middle Africa. Formal name: Republic of Equatorial Guinea.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 1355986,
+      "gdp_md_est": 11026,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "7. Least developed region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "eb6a5aed-a2ca-53f3-9c7a-6b4fe7c7ce9c",
+      "name": "Zambia",
+      "tag": "ZMB",
+      "map_aliases": [
+        "Zambia",
+        "Republic of Zambia"
+      ],
+      "summary": "Zambia is a sovereign state in Eastern Africa. Formal name: Republic of Zambia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 17861030,
+      "gdp_md_est": 23309,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "7fceb458-c46a-59f4-b37c-4c86100cb20d",
+      "name": "Malawi",
+      "tag": "MWI",
+      "map_aliases": [
+        "Malawi",
+        "Republic of Malawi",
+        "Mal."
+      ],
+      "summary": "Malawi is a sovereign state in Eastern Africa. Formal name: Republic of Malawi.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 18628747,
+      "gdp_md_est": 7666,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "2f364b8f-b7c1-54a9-8602-e08dca242634",
+      "name": "Mozambique",
+      "tag": "MOZ",
+      "map_aliases": [
+        "Mozambique",
+        "Republic of Mozambique",
+        "Moz."
+      ],
+      "summary": "Mozambique is a sovereign state in Eastern Africa. Formal name: Republic of Mozambique.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 30366036,
+      "gdp_md_est": 15291,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "834c799c-8e12-50dc-8466-a84052127917",
+      "name": "eSwatini",
+      "tag": "SWZ",
+      "map_aliases": [
+        "eSwatini",
+        "Kingdom of eSwatini",
+        "eSw."
+      ],
+      "summary": "eSwatini is a sovereign state in Southern Africa. Formal name: Kingdom of eSwatini.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 1148130,
+      "gdp_md_est": 4471,
+      "continent": "Africa",
+      "subregion": "Southern Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "8694a023-2f89-5db8-b3d3-7f3dcad4e31b",
+      "name": "Angola",
+      "tag": "AGO",
+      "map_aliases": [
+        "Angola",
+        "People's Republic of Angola",
+        "Ang."
+      ],
+      "summary": "Angola is a sovereign state in Middle Africa. Formal name: People's Republic of Angola.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 31825295,
+      "gdp_md_est": 88815,
+      "continent": "Africa",
+      "subregion": "Middle Africa",
+      "economy": "7. Least developed region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "f28f73ad-5397-58de-ab6d-76e133d65179",
+      "name": "Burundi",
+      "tag": "BDI",
+      "map_aliases": [
+        "Burundi",
+        "Republic of Burundi",
+        "Bur."
+      ],
+      "summary": "Burundi is a sovereign state in Eastern Africa. Formal name: Republic of Burundi.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 11530580,
+      "gdp_md_est": 3012,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "089a0f1e-69a1-5995-81ce-378063beb293",
+      "name": "Israel",
+      "tag": "ISR",
+      "map_aliases": [
+        "Israel",
+        "State of Israel",
+        "Isr."
+      ],
+      "summary": "Israel is a sovereign state in Western Asia. Formal name: State of Israel.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 9053300,
+      "gdp_md_est": 394652,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "14302768-7d4b-5eb4-8787-30b92437782f",
+      "name": "Lebanon",
+      "tag": "LBN",
+      "map_aliases": [
+        "Lebanon",
+        "Lebanese Republic",
+        "Leb."
+      ],
+      "summary": "Lebanon is a sovereign state in Western Asia. Formal name: Lebanese Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 6855713,
+      "gdp_md_est": 51991,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "89955669-d774-5370-afd7-ea19dd4b3ef9",
+      "name": "Madagascar",
+      "tag": "MDG",
+      "map_aliases": [
+        "Madagascar",
+        "Republic of Madagascar",
+        "Mad."
+      ],
+      "summary": "Madagascar is a sovereign state in Eastern Africa. Formal name: Republic of Madagascar.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 26969307,
+      "gdp_md_est": 14114,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "60c84513-fa4b-5584-95ad-ceafca1103fe",
+      "name": "Palestine",
+      "tag": "PSE",
+      "map_aliases": [
+        "Palestine",
+        "West Bank and Gaza",
+        "Israel",
+        "Pal."
+      ],
+      "summary": "Palestine is a sovereign state in Western Asia. Formal name: West Bank and Gaza.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 4685306,
+      "gdp_md_est": 16276,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "c8bd55d7-d380-5b3a-a96e-68729817edbc",
+      "name": "Gambia",
+      "tag": "GMB",
+      "map_aliases": [
+        "Gambia",
+        "The Gambia",
+        "Republic of the Gambia"
+      ],
+      "summary": "Gambia is a sovereign state in Western Africa. Formal name: Republic of the Gambia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 2347706,
+      "gdp_md_est": 1826,
+      "continent": "Africa",
+      "subregion": "Western Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "4eb9c64d-3b58-5013-b00b-5b629400a338",
+      "name": "Tunisia",
+      "tag": "TUN",
+      "map_aliases": [
+        "Tunisia",
+        "Republic of Tunisia",
+        "Tun."
+      ],
+      "summary": "Tunisia is a sovereign state in Northern Africa. Formal name: Republic of Tunisia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 11694719,
+      "gdp_md_est": 38796,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "81ca7165-2db4-5d5e-a1d1-80a8b183ac2b",
+      "name": "Algeria",
+      "tag": "DZA",
+      "map_aliases": [
+        "Algeria",
+        "People's Democratic Republic of Algeria",
+        "Alg."
+      ],
+      "summary": "Algeria is a sovereign state in Northern Africa. Formal name: People's Democratic Republic of Algeria.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 43053054,
+      "gdp_md_est": 171091,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "40e41410-3568-5bf4-9a59-f28d43c5a9c4",
+      "name": "Jordan",
+      "tag": "JOR",
+      "map_aliases": [
+        "Jordan",
+        "Hashemite Kingdom of Jordan",
+        "Jord."
+      ],
+      "summary": "Jordan is a sovereign state in Western Asia. Formal name: Hashemite Kingdom of Jordan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 10101694,
+      "gdp_md_est": 44502,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "05e8f833-cd77-58b2-a731-e76b7869c7cc",
+      "name": "United Arab Emirates",
+      "tag": "ARE",
+      "map_aliases": [
+        "United Arab Emirates",
+        "U.A.E."
+      ],
+      "summary": "United Arab Emirates is a sovereign state in Western Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 9770529,
+      "gdp_md_est": 421142,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "1ccddf3a-354a-5fb3-8833-538725150307",
+      "name": "Qatar",
+      "tag": "QAT",
+      "map_aliases": [
+        "Qatar",
+        "State of Qatar"
+      ],
+      "summary": "Qatar is a sovereign state in Western Asia. Formal name: State of Qatar.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 2832067,
+      "gdp_md_est": 175837,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "de4346a7-99e2-5f9f-9514-50873adfd24e",
+      "name": "Kuwait",
+      "tag": "KWT",
+      "map_aliases": [
+        "Kuwait",
+        "State of Kuwait",
+        "Kwt."
+      ],
+      "summary": "Kuwait is a sovereign state in Western Asia. Formal name: State of Kuwait.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 4207083,
+      "gdp_md_est": 134628,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "aff73c65-8d27-55d9-a1b4-d9fdfb4a7b48",
+      "name": "Iraq",
+      "tag": "IRQ",
+      "map_aliases": [
+        "Iraq",
+        "Republic of Iraq"
+      ],
+      "summary": "Iraq is a sovereign state in Western Asia. Formal name: Republic of Iraq.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 39309783,
+      "gdp_md_est": 234094,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "f0871f8c-5a14-5839-90b7-998d46f6e50a",
+      "name": "Oman",
+      "tag": "OMN",
+      "map_aliases": [
+        "Oman",
+        "Sultanate of Oman"
+      ],
+      "summary": "Oman is a sovereign state in Western Asia. Formal name: Sultanate of Oman.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 4974986,
+      "gdp_md_est": 76331,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "d9f87721-3bda-5307-953c-38add2d84419",
+      "name": "Vanuatu",
+      "tag": "VUT",
+      "map_aliases": [
+        "Vanuatu",
+        "Republic of Vanuatu",
+        "Van."
+      ],
+      "summary": "Vanuatu is a sovereign state in Melanesia. Formal name: Republic of Vanuatu. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 299882,
+      "gdp_md_est": 934,
+      "continent": "Oceania",
+      "subregion": "Melanesia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "96fd212b-cfcd-52ec-b84f-60411639d241",
+      "name": "Cambodia",
+      "tag": "KHM",
+      "map_aliases": [
+        "Cambodia",
+        "Kingdom of Cambodia",
+        "Camb."
+      ],
+      "summary": "Cambodia is a sovereign state in South-Eastern Asia. Formal name: Kingdom of Cambodia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 16486542,
+      "gdp_md_est": 27089,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "3ef736a6-920e-54b7-b89e-0f5896edce21",
+      "name": "Thailand",
+      "tag": "THA",
+      "map_aliases": [
+        "Thailand",
+        "Kingdom of Thailand",
+        "Thai."
+      ],
+      "summary": "Thailand is a sovereign state in South-Eastern Asia. Formal name: Kingdom of Thailand.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 69625582,
+      "gdp_md_est": 543548,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "8f710277-54e7-56bc-a695-f849cd15751b",
+      "name": "Laos",
+      "tag": "LAO",
+      "map_aliases": [
+        "Laos",
+        "Lao PDR",
+        "Lao People's Democratic Republic"
+      ],
+      "summary": "Laos is a sovereign state in South-Eastern Asia. Formal name: Lao People's Democratic Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 7169455,
+      "gdp_md_est": 18173,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "63a5ff0d-2483-5efb-a688-e1eec643f85d",
+      "name": "Myanmar",
+      "tag": "MMR",
+      "map_aliases": [
+        "Myanmar",
+        "Republic of the Union of Myanmar",
+        "Myan."
+      ],
+      "summary": "Myanmar is a sovereign state in South-Eastern Asia. Formal name: Republic of the Union of Myanmar.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 54045420,
+      "gdp_md_est": 76085,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "f7670112-aa53-5d24-a36d-71ec8e3752a5",
+      "name": "Vietnam",
+      "tag": "VNM",
+      "map_aliases": [
+        "Vietnam",
+        "Socialist Republic of Vietnam",
+        "Viet."
+      ],
+      "summary": "Vietnam is a sovereign state in South-Eastern Asia. Formal name: Socialist Republic of Vietnam.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 96462106,
+      "gdp_md_est": 261921,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "b247843a-b61e-587a-88ca-14a9181a75a2",
+      "name": "North Korea",
+      "tag": "PRK",
+      "map_aliases": [
+        "North Korea",
+        "Dem. Rep. Korea",
+        "Democratic People's Republic of Korea",
+        "N.K."
+      ],
+      "summary": "North Korea is a sovereign state in Eastern Asia. Formal name: Democratic People's Republic of Korea.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 25666161,
+      "gdp_md_est": 40000,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "62d4eca8-2ddf-5357-98de-1efd0dc308fa",
+      "name": "South Korea",
+      "tag": "KOR",
+      "map_aliases": [
+        "South Korea",
+        "Republic of Korea",
+        "S.K."
+      ],
+      "summary": "South Korea is a sovereign state in Eastern Asia. Formal name: Republic of Korea.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 51709098,
+      "gdp_md_est": 1646739,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "4. Emerging region: MIKT",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "0810b4ef-2a02-5cd5-9e71-a30de0bb0c62",
+      "name": "Mongolia",
+      "tag": "MNG",
+      "map_aliases": [
+        "Mongolia",
+        "Mong."
+      ],
+      "summary": "Mongolia is a sovereign state in Eastern Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 3225167,
+      "gdp_md_est": 13996,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "9cc6e034-8543-560c-811e-62e8a70dfa71",
+      "name": "India",
+      "tag": "IND",
+      "map_aliases": [
+        "India",
+        "Republic of India"
+      ],
+      "summary": "India is a sovereign state in Southern Asia. Formal name: Republic of India.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 1366417754,
+      "gdp_md_est": 2868929,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "3. Emerging region: BRIC",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "e69bc536-7bcf-5a7e-bfb8-5b06f45c9aab",
+      "name": "Bangladesh",
+      "tag": "BGD",
+      "map_aliases": [
+        "Bangladesh",
+        "People's Republic of Bangladesh",
+        "Bang."
+      ],
+      "summary": "Bangladesh is a sovereign state in Southern Asia. Formal name: People's Republic of Bangladesh.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 163046161,
+      "gdp_md_est": 302571,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "40634e64-d825-53e4-b109-856be2e56214",
+      "name": "Bhutan",
+      "tag": "BTN",
+      "map_aliases": [
+        "Bhutan",
+        "Kingdom of Bhutan"
+      ],
+      "summary": "Bhutan is a sovereign state in Southern Asia. Formal name: Kingdom of Bhutan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 763092,
+      "gdp_md_est": 2530,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "dc88260b-a512-58d8-adfc-abbe7b52a85e",
+      "name": "Nepal",
+      "tag": "NPL",
+      "map_aliases": [
+        "Nepal"
+      ],
+      "summary": "Nepal is a sovereign state in Southern Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 28608710,
+      "gdp_md_est": 30641,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "c89c98c7-f142-52de-a4df-08400e105c9b",
+      "name": "Pakistan",
+      "tag": "PAK",
+      "map_aliases": [
+        "Pakistan",
+        "Islamic Republic of Pakistan",
+        "Pak."
+      ],
+      "summary": "Pakistan is a sovereign state in Southern Asia. Formal name: Islamic Republic of Pakistan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 216565318,
+      "gdp_md_est": 278221,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "6565c3db-e7b7-5e2a-a024-7665bb12d89f",
+      "name": "Afghanistan",
+      "tag": "AFG",
+      "map_aliases": [
+        "Afghanistan",
+        "Islamic State of Afghanistan",
+        "Afg."
+      ],
+      "summary": "Afghanistan is a sovereign state in Southern Asia. Formal name: Islamic State of Afghanistan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 38041754,
+      "gdp_md_est": 19291,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "4bf0c22d-3890-5705-94c0-17f949c5e3c9",
+      "name": "Tajikistan",
+      "tag": "TJK",
+      "map_aliases": [
+        "Tajikistan",
+        "Republic of Tajikistan",
+        "Tjk."
+      ],
+      "summary": "Tajikistan is a sovereign state in Central Asia. Formal name: Republic of Tajikistan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 9321018,
+      "gdp_md_est": 8116,
+      "continent": "Asia",
+      "subregion": "Central Asia",
+      "economy": "6. Developing region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "c1af4286-2ea9-5ab4-aea4-75eccc5e8b9d",
+      "name": "Kyrgyzstan",
+      "tag": "KGZ",
+      "map_aliases": [
+        "Kyrgyzstan",
+        "Kyrgyz Republic",
+        "Kgz."
+      ],
+      "summary": "Kyrgyzstan is a sovereign state in Central Asia. Formal name: Kyrgyz Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 6456900,
+      "gdp_md_est": 8454,
+      "continent": "Asia",
+      "subregion": "Central Asia",
+      "economy": "6. Developing region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "651795b4-d05b-5329-990b-e2a35b5d46c1",
+      "name": "Turkmenistan",
+      "tag": "TKM",
+      "map_aliases": [
+        "Turkmenistan",
+        "Turkm."
+      ],
+      "summary": "Turkmenistan is a sovereign state in Central Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 5942089,
+      "gdp_md_est": 40761,
+      "continent": "Asia",
+      "subregion": "Central Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "cb157133-d745-597f-8cd3-cac5d1a4f584",
+      "name": "Iran",
+      "tag": "IRN",
+      "map_aliases": [
+        "Iran",
+        "Islamic Republic of Iran"
+      ],
+      "summary": "Iran is a sovereign state in Southern Asia. Formal name: Islamic Republic of Iran.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 82913906,
+      "gdp_md_est": 453996,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "5. Emerging region: G20",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "b387e1fc-43a8-58b9-b365-335bfe2464a6",
+      "name": "Syria",
+      "tag": "SYR",
+      "map_aliases": [
+        "Syria",
+        "Syrian Arab Republic"
+      ],
+      "summary": "Syria is a sovereign state in Western Asia. Formal name: Syrian Arab Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 17070135,
+      "gdp_md_est": 98830,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "9b84615a-86cc-50c7-ba76-cf6d41844940",
+      "name": "Armenia",
+      "tag": "ARM",
+      "map_aliases": [
+        "Armenia",
+        "Republic of Armenia",
+        "Arm."
+      ],
+      "summary": "Armenia is a sovereign state in Western Asia. Formal name: Republic of Armenia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 2957731,
+      "gdp_md_est": 13672,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "1c69b155-f161-5155-946c-643964cfef2a",
+      "name": "Sweden",
+      "tag": "SWE",
+      "map_aliases": [
+        "Sweden",
+        "Kingdom of Sweden",
+        "Swe."
+      ],
+      "summary": "Sweden is a sovereign state in Northern Europe. Formal name: Kingdom of Sweden.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 10285453,
+      "gdp_md_est": 530883,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "d7822c05-754e-5d96-b431-1255ac8eb0b1",
+      "name": "Belarus",
+      "tag": "BLR",
+      "map_aliases": [
+        "Belarus",
+        "Republic of Belarus",
+        "Bela."
+      ],
+      "summary": "Belarus is a sovereign state in Eastern Europe. Formal name: Republic of Belarus.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 9466856,
+      "gdp_md_est": 63080,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "d7b1f7de-13cd-5cb2-a64c-617e1017c4e1",
+      "name": "Ukraine",
+      "tag": "UKR",
+      "map_aliases": [
+        "Ukraine",
+        "Ukr."
+      ],
+      "summary": "Ukraine is a sovereign state in Eastern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 44385155,
+      "gdp_md_est": 153781,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "a8ee5eca-d1c6-5930-b2f6-c4b83b7a9a51",
+      "name": "Poland",
+      "tag": "POL",
+      "map_aliases": [
+        "Poland",
+        "Republic of Poland",
+        "Pol."
+      ],
+      "summary": "Poland is a sovereign state in Eastern Europe. Formal name: Republic of Poland.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 37970874,
+      "gdp_md_est": 595858,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "4d3ed9f0-9a22-50a2-92ca-8bc45cb09640",
+      "name": "Austria",
+      "tag": "AUT",
+      "map_aliases": [
+        "Austria",
+        "Republic of Austria",
+        "Aust."
+      ],
+      "summary": "Austria is a sovereign state in Western Europe. Formal name: Republic of Austria.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 8877067,
+      "gdp_md_est": 445075,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "2b54bee0-dd2d-5645-a197-6400015565f4",
+      "name": "Hungary",
+      "tag": "HUN",
+      "map_aliases": [
+        "Hungary",
+        "Republic of Hungary",
+        "Hun."
+      ],
+      "summary": "Hungary is a sovereign state in Eastern Europe. Formal name: Republic of Hungary.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 9769949,
+      "gdp_md_est": 163469,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "5022ce5c-914d-5f2a-bdb7-a83ea6f54f91",
+      "name": "Moldova",
+      "tag": "MDA",
+      "map_aliases": [
+        "Moldova",
+        "Republic of Moldova",
+        "Mda."
+      ],
+      "summary": "Moldova is a sovereign state in Eastern Europe. Formal name: Republic of Moldova.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 2657637,
+      "gdp_md_est": 11968,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "2fc7b76e-9a5e-53e0-a44f-332d77c26995",
+      "name": "Romania",
+      "tag": "ROU",
+      "map_aliases": [
+        "Romania",
+        "Rom."
+      ],
+      "summary": "Romania is a sovereign state in Eastern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 19356544,
+      "gdp_md_est": 250077,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "2ff4113f-e2b9-509b-aba5-739a35d0f01b",
+      "name": "Lithuania",
+      "tag": "LTU",
+      "map_aliases": [
+        "Lithuania",
+        "Republic of Lithuania",
+        "Lith."
+      ],
+      "summary": "Lithuania is a sovereign state in Northern Europe. Formal name: Republic of Lithuania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2786844,
+      "gdp_md_est": 54627,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "93e756b4-3697-5d1a-b887-1845adadcd1b",
+      "name": "Latvia",
+      "tag": "LVA",
+      "map_aliases": [
+        "Latvia",
+        "Republic of Latvia",
+        "Lat."
+      ],
+      "summary": "Latvia is a sovereign state in Northern Europe. Formal name: Republic of Latvia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 1912789,
+      "gdp_md_est": 34102,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "936fae14-40e8-5d23-8c33-a299a51db89c",
+      "name": "Estonia",
+      "tag": "EST",
+      "map_aliases": [
+        "Estonia",
+        "Republic of Estonia",
+        "Est."
+      ],
+      "summary": "Estonia is a sovereign state in Northern Europe. Formal name: Republic of Estonia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 1326590,
+      "gdp_md_est": 31471,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "aaec6dd3-ecb9-58c6-a022-6a0c9a1402a2",
+      "name": "Germany",
+      "tag": "DEU",
+      "map_aliases": [
+        "Germany",
+        "Federal Republic of Germany",
+        "Ger."
+      ],
+      "summary": "Germany is a sovereign state in Western Europe. Formal name: Federal Republic of Germany.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 83132799,
+      "gdp_md_est": 3861123,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "21bde7ab-da5d-518c-bf75-08e2a42f31af",
+      "name": "Bulgaria",
+      "tag": "BGR",
+      "map_aliases": [
+        "Bulgaria",
+        "Republic of Bulgaria",
+        "Bulg."
+      ],
+      "summary": "Bulgaria is a sovereign state in Eastern Europe. Formal name: Republic of Bulgaria.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 6975761,
+      "gdp_md_est": 68558,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "8b6012c8-bc73-56c8-9a19-73f900033258",
+      "name": "Greece",
+      "tag": "GRC",
+      "map_aliases": [
+        "Greece",
+        "Hellenic Republic"
+      ],
+      "summary": "Greece is a sovereign state in Southern Europe. Formal name: Hellenic Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 10716322,
+      "gdp_md_est": 209852,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "9b57fbba-d1a6-57bc-8a5b-460a5b025532",
+      "name": "Turkey",
+      "tag": "TUR",
+      "map_aliases": [
+        "Turkey",
+        "Republic of Turkey",
+        "Tur."
+      ],
+      "summary": "Turkey is a sovereign state in Western Asia. Formal name: Republic of Turkey.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 83429615,
+      "gdp_md_est": 761425,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "4. Emerging region: MIKT",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "8dbf3fcb-a686-5224-8a37-3bd92c9a7daa",
+      "name": "Albania",
+      "tag": "ALB",
+      "map_aliases": [
+        "Albania",
+        "Republic of Albania",
+        "Alb."
+      ],
+      "summary": "Albania is a sovereign state in Southern Europe. Formal name: Republic of Albania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 2854191,
+      "gdp_md_est": 15279,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "8febf542-3470-5332-9e3c-8f224e4cb6e3",
+      "name": "Croatia",
+      "tag": "HRV",
+      "map_aliases": [
+        "Croatia",
+        "Republic of Croatia",
+        "Cro."
+      ],
+      "summary": "Croatia is a sovereign state in Southern Europe. Formal name: Republic of Croatia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 4067500,
+      "gdp_md_est": 60752,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "4971a99c-36af-5e43-92a8-f1d725ce0b12",
+      "name": "Switzerland",
+      "tag": "CHE",
+      "map_aliases": [
+        "Switzerland",
+        "Swiss Confederation",
+        "Switz."
+      ],
+      "summary": "Switzerland is a sovereign state in Western Europe. Formal name: Swiss Confederation.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 8574832,
+      "gdp_md_est": 703082,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "f651ca84-44b3-56ac-b2ef-b1478568cf88",
+      "name": "Luxembourg",
+      "tag": "LUX",
+      "map_aliases": [
+        "Luxembourg",
+        "Grand Duchy of Luxembourg",
+        "Lux."
+      ],
+      "summary": "Luxembourg is a sovereign state in Western Europe. Formal name: Grand Duchy of Luxembourg.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 619896,
+      "gdp_md_est": 71104,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "f708fa5e-d68c-5b35-8818-9099b920832c",
+      "name": "Belgium",
+      "tag": "BEL",
+      "map_aliases": [
+        "Belgium",
+        "Kingdom of Belgium",
+        "Belg."
+      ],
+      "summary": "Belgium is a sovereign state in Western Europe. Formal name: Kingdom of Belgium.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 11484055,
+      "gdp_md_est": 533097,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "5ecc5114-818e-5f9c-a059-b5de20ceaf9c",
+      "name": "Netherlands",
+      "tag": "NLD",
+      "map_aliases": [
+        "Netherlands",
+        "Kingdom of the Netherlands",
+        "Neth."
+      ],
+      "summary": "Netherlands is a sovereign state in Western Europe. Formal name: Kingdom of the Netherlands.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 17332850,
+      "gdp_md_est": 907050,
+      "continent": "Europe",
+      "subregion": "Western Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "974ad2eb-485f-59c6-90cd-f6066ec783e9",
+      "name": "Portugal",
+      "tag": "PRT",
+      "map_aliases": [
+        "Portugal",
+        "Portuguese Republic",
+        "Port."
+      ],
+      "summary": "Portugal is a sovereign state in Southern Europe. Formal name: Portuguese Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 10269417,
+      "gdp_md_est": 238785,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "fa5f2afa-513b-582b-a981-6d812abddb80",
+      "name": "Spain",
+      "tag": "ESP",
+      "map_aliases": [
+        "Spain",
+        "Kingdom of Spain",
+        "Sp."
+      ],
+      "summary": "Spain is a sovereign state in Southern Europe. Formal name: Kingdom of Spain.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 47076781,
+      "gdp_md_est": 1393490,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "1b2ba0b5-b125-5527-8ef9-6b0bbf700526",
+      "name": "Ireland",
+      "tag": "IRL",
+      "map_aliases": [
+        "Ireland",
+        "Ire."
+      ],
+      "summary": "Ireland is a sovereign state in Northern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 4941444,
+      "gdp_md_est": 388698,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "0a73b3e8-7043-5774-b73e-ac08df7d3ee2",
+      "name": "New Caledonia",
+      "tag": "NCL",
+      "map_aliases": [
+        "New Caledonia",
+        "France",
+        "New C."
+      ],
+      "summary": "New Caledonia is a sovereign state in Melanesia. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 287800,
+      "gdp_md_est": 10770,
+      "continent": "Oceania",
+      "subregion": "Melanesia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "ac25a7dc-bfaf-5dec-9296-a1dce5f21e41",
+      "name": "Solomon Islands",
+      "tag": "SLB",
+      "map_aliases": [
+        "Solomon Islands",
+        "Solomon Is.",
+        "S. Is."
+      ],
+      "summary": "Solomon Islands is a sovereign state in Melanesia. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 669823,
+      "gdp_md_est": 1589,
+      "continent": "Oceania",
+      "subregion": "Melanesia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "e24d0789-80d6-5692-88a7-912c7ced8e81",
+      "name": "New Zealand",
+      "tag": "NZL",
+      "map_aliases": [
+        "New Zealand",
+        "N.Z."
+      ],
+      "summary": "New Zealand is a sovereign state in Australia and New Zealand. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 4917000,
+      "gdp_md_est": 206928,
+      "continent": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "303fc4ee-d795-5625-a4e6-2622df048bb0",
+      "name": "Australia",
+      "tag": "AUS",
+      "map_aliases": [
+        "Australia",
+        "Commonwealth of Australia",
+        "Auz."
+      ],
+      "summary": "Australia is a sovereign state in Australia and New Zealand. Formal name: Commonwealth of Australia. Continent: Oceania.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 25364307,
+      "gdp_md_est": 1396567,
+      "continent": "Oceania",
+      "subregion": "Australia and New Zealand",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "6af9be99-a791-59f5-ae40-f4c8885abb77",
+      "name": "Sri Lanka",
+      "tag": "LKA",
+      "map_aliases": [
+        "Sri Lanka",
+        "Democratic Socialist Republic of Sri Lanka",
+        "Sri L."
+      ],
+      "summary": "Sri Lanka is a sovereign state in Southern Asia. Formal name: Democratic Socialist Republic of Sri Lanka.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 21803000,
+      "gdp_md_est": 84008,
+      "continent": "Asia",
+      "subregion": "Southern Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "11f18da9-b4ac-5c8d-b1de-137fa39d2c49",
+      "name": "China",
+      "tag": "CHN",
+      "map_aliases": [
+        "China",
+        "People's Republic of China"
+      ],
+      "summary": "China is a sovereign state in Eastern Asia. Formal name: People's Republic of China.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 1397715000,
+      "gdp_md_est": 14342903,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "3. Emerging region: BRIC",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "1dfa7f08-87cb-58e8-a1f7-1c696237ef80",
+      "name": "Taiwan",
+      "tag": "TWN",
+      "map_aliases": [
+        "Taiwan"
+      ],
+      "summary": "Taiwan is a sovereign state in Eastern Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 23568378,
+      "gdp_md_est": 1127000,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "15903949-aeb1-5773-9ee5-7e70ea5e578f",
+      "name": "Italy",
+      "tag": "ITA",
+      "map_aliases": [
+        "Italy",
+        "Italian Republic"
+      ],
+      "summary": "Italy is a sovereign state in Southern Europe. Formal name: Italian Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 60297396,
+      "gdp_md_est": 2003576,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "b18235c0-befb-5daf-964e-ac91bd7e9442",
+      "name": "Denmark",
+      "tag": "DNK",
+      "map_aliases": [
+        "Denmark",
+        "Kingdom of Denmark",
+        "Den."
+      ],
+      "summary": "Denmark is a sovereign state in Northern Europe. Formal name: Kingdom of Denmark.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 5818553,
+      "gdp_md_est": 350104,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "79875323-b79e-53e6-aef1-e41880167655",
+      "name": "United Kingdom",
+      "tag": "GBR",
+      "map_aliases": [
+        "United Kingdom",
+        "United Kingdom of Great Britain and Northern Ireland",
+        "U.K."
+      ],
+      "summary": "United Kingdom is a sovereign state in Northern Europe. Formal name: United Kingdom of Great Britain and Northern Ireland.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 66834405,
+      "gdp_md_est": 2829108,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "a98f6f14-eb70-5a9b-a133-175c62c6fc46",
+      "name": "Iceland",
+      "tag": "ISL",
+      "map_aliases": [
+        "Iceland",
+        "Republic of Iceland"
+      ],
+      "summary": "Iceland is a sovereign state in Northern Europe. Formal name: Republic of Iceland.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 361313,
+      "gdp_md_est": 24188,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "2decd3ce-0cf4-54c7-be7e-fc50627dc09d",
+      "name": "Azerbaijan",
+      "tag": "AZE",
+      "map_aliases": [
+        "Azerbaijan",
+        "Republic of Azerbaijan",
+        "Aze."
+      ],
+      "summary": "Azerbaijan is a sovereign state in Western Asia. Formal name: Republic of Azerbaijan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 10023318,
+      "gdp_md_est": 48047,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "875a208e-46fc-54b5-bcae-b66f2a6a37b3",
+      "name": "Georgia",
+      "tag": "GEO",
+      "map_aliases": [
+        "Georgia",
+        "Geo."
+      ],
+      "summary": "Georgia is a sovereign state in Western Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 3720382,
+      "gdp_md_est": 17477,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "567b054b-2999-5341-933f-658ad1a40d5e",
+      "name": "Philippines",
+      "tag": "PHL",
+      "map_aliases": [
+        "Philippines",
+        "Republic of the Philippines",
+        "Phil."
+      ],
+      "summary": "Philippines is a sovereign state in South-Eastern Asia. Formal name: Republic of the Philippines.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 108116615,
+      "gdp_md_est": 376795,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "ad5c5fc5-70e4-5ca5-918c-23f01a7d87eb",
+      "name": "Malaysia",
+      "tag": "MYS",
+      "map_aliases": [
+        "Malaysia",
+        "Malay."
+      ],
+      "summary": "Malaysia is a sovereign state in South-Eastern Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 31949777,
+      "gdp_md_est": 364681,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "58c0b151-7cb0-54ee-917d-c899c3b1ffb6",
+      "name": "Brunei",
+      "tag": "BRN",
+      "map_aliases": [
+        "Brunei",
+        "Brunei Darussalam",
+        "Negara Brunei Darussalam"
+      ],
+      "summary": "Brunei is a sovereign state in South-Eastern Asia. Formal name: Negara Brunei Darussalam.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 433285,
+      "gdp_md_est": 13469,
+      "continent": "Asia",
+      "subregion": "South-Eastern Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "042fc8a6-313b-5b42-aca7-bdb222f11fb0",
+      "name": "Slovenia",
+      "tag": "SVN",
+      "map_aliases": [
+        "Slovenia",
+        "Republic of Slovenia",
+        "Slo."
+      ],
+      "summary": "Slovenia is a sovereign state in Southern Europe. Formal name: Republic of Slovenia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 2087946,
+      "gdp_md_est": 54174,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "b5caff52-1f53-5bf9-9c08-47326707b95d",
+      "name": "Finland",
+      "tag": "FIN",
+      "map_aliases": [
+        "Finland",
+        "Republic of Finland",
+        "Fin."
+      ],
+      "summary": "Finland is a sovereign state in Northern Europe. Formal name: Republic of Finland.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 5520314,
+      "gdp_md_est": 269296,
+      "continent": "Europe",
+      "subregion": "Northern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "64e1c93c-8b0a-56e7-b2cc-4a26fed884d6",
+      "name": "Slovakia",
+      "tag": "SVK",
+      "map_aliases": [
+        "Slovakia",
+        "Slovak Republic",
+        "Svk."
+      ],
+      "summary": "Slovakia is a sovereign state in Eastern Europe. Formal name: Slovak Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 5454073,
+      "gdp_md_est": 105079,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "b7caa24f-386e-5798-85b9-372169435516",
+      "name": "Czechia",
+      "tag": "CZE",
+      "map_aliases": [
+        "Czechia",
+        "Czech Republic",
+        "Cz."
+      ],
+      "summary": "Czechia is a sovereign state in Eastern Europe. Formal name: Czech Republic.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 10669709,
+      "gdp_md_est": 250680,
+      "continent": "Europe",
+      "subregion": "Eastern Europe",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "f011f787-3c49-5807-9043-6338d975dd5f",
+      "name": "Eritrea",
+      "tag": "ERI",
+      "map_aliases": [
+        "Eritrea",
+        "State of Eritrea",
+        "Erit."
+      ],
+      "summary": "Eritrea is a sovereign state in Eastern Africa. Formal name: State of Eritrea.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 6081196,
+      "gdp_md_est": 2065,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "50611bed-e7af-5fee-b8f0-175e64ef84c9",
+      "name": "Japan",
+      "tag": "JPN",
+      "map_aliases": [
+        "Japan"
+      ],
+      "summary": "Japan is a sovereign state in Eastern Asia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.08,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.02
+      },
+      "population_est": 126264931,
+      "gdp_md_est": 5081769,
+      "continent": "Asia",
+      "subregion": "Eastern Asia",
+      "economy": "1. Developed region: G7",
+      "income_group": "1. High income: OECD"
+    },
+    {
+      "nation_id": "1ddfb9f5-656b-5552-aea9-0c14c46cfc26",
+      "name": "Paraguay",
+      "tag": "PRY",
+      "map_aliases": [
+        "Paraguay",
+        "Republic of Paraguay",
+        "Para."
+      ],
+      "summary": "Paraguay is a sovereign state in South America. Formal name: Republic of Paraguay.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 7044636,
+      "gdp_md_est": 38145,
+      "continent": "South America",
+      "subregion": "South America",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "be145e62-0422-518f-b6a3-20089fdd6564",
+      "name": "Yemen",
+      "tag": "YEM",
+      "map_aliases": [
+        "Yemen",
+        "Republic of Yemen",
+        "Yem."
+      ],
+      "summary": "Yemen is a sovereign state in Western Asia. Formal name: Republic of Yemen.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 29161922,
+      "gdp_md_est": 22581,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "05ca6946-4659-5d41-94b2-a420086f2e90",
+      "name": "Saudi Arabia",
+      "tag": "SAU",
+      "map_aliases": [
+        "Saudi Arabia",
+        "Kingdom of Saudi Arabia",
+        "Saud."
+      ],
+      "summary": "Saudi Arabia is a sovereign state in Western Asia. Formal name: Kingdom of Saudi Arabia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 34268528,
+      "gdp_md_est": 792966,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "2. Developed region: nonG7",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "d9846ca1-2000-58ab-afcd-b082a22cebba",
+      "name": "Antarctica",
+      "tag": "ATA",
+      "map_aliases": [
+        "Antarctica",
+        "Ant."
+      ],
+      "summary": "Antarctica is a sovereign state in Antarctica.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 4490,
+      "gdp_md_est": 898,
+      "continent": "Antarctica",
+      "subregion": "Antarctica",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "8335ad71-6596-54ed-8e52-b02a1e85faf0",
+      "name": "Northern Cyprus",
+      "tag": "NOR",
+      "map_aliases": [
+        "Northern Cyprus",
+        "N. Cyprus",
+        "Turkish Republic of Northern Cyprus",
+        "N. Cy."
+      ],
+      "summary": "Northern Cyprus is a sovereign state in Western Asia. Formal name: Turkish Republic of Northern Cyprus.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 326000,
+      "gdp_md_est": 3600,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "9452bed7-0257-5a6d-b191-5a89c213fccf",
+      "name": "Cyprus",
+      "tag": "CYP",
+      "map_aliases": [
+        "Cyprus",
+        "Republic of Cyprus",
+        "Cyp."
+      ],
+      "summary": "Cyprus is a sovereign state in Western Asia. Formal name: Republic of Cyprus.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 1198575,
+      "gdp_md_est": 24948,
+      "continent": "Asia",
+      "subregion": "Western Asia",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "ec126ae0-b7b1-54e1-a4bc-59180c50a963",
+      "name": "Morocco",
+      "tag": "MAR",
+      "map_aliases": [
+        "Morocco",
+        "Kingdom of Morocco",
+        "Mor."
+      ],
+      "summary": "Morocco is a sovereign state in Northern Africa. Formal name: Kingdom of Morocco.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 36471769,
+      "gdp_md_est": 119700,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "75350dab-e85d-5711-b569-bd7e0183af08",
+      "name": "Egypt",
+      "tag": "EGY",
+      "map_aliases": [
+        "Egypt",
+        "Arab Republic of Egypt"
+      ],
+      "summary": "Egypt is a sovereign state in Northern Africa. Formal name: Arab Republic of Egypt.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 100388073,
+      "gdp_md_est": 303092,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "5. Emerging region: G20",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "bc688f1a-6030-5bc5-ade6-cc3887d8fc87",
+      "name": "Libya",
+      "tag": "LBY",
+      "map_aliases": [
+        "Libya"
+      ],
+      "summary": "Libya is a sovereign state in Northern Africa.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 6777452,
+      "gdp_md_est": 52091,
+      "continent": "Africa",
+      "subregion": "Northern Africa",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "9dbb0657-18ed-5f45-9e91-0728c536159e",
+      "name": "Ethiopia",
+      "tag": "ETH",
+      "map_aliases": [
+        "Ethiopia",
+        "Federal Democratic Republic of Ethiopia",
+        "Eth."
+      ],
+      "summary": "Ethiopia is a sovereign state in Eastern Africa. Formal name: Federal Democratic Republic of Ethiopia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 112078730,
+      "gdp_md_est": 95912,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "e81ed2e9-a8d4-5ef7-b360-690e2b8f6dde",
+      "name": "Djibouti",
+      "tag": "DJI",
+      "map_aliases": [
+        "Djibouti",
+        "Republic of Djibouti",
+        "Dji."
+      ],
+      "summary": "Djibouti is a sovereign state in Eastern Africa. Formal name: Republic of Djibouti.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 973560,
+      "gdp_md_est": 3324,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "5ef1d4e2-6aa7-5b3d-80bc-1cfeab765d4a",
+      "name": "Somaliland",
+      "tag": "SOM",
+      "map_aliases": [
+        "Somaliland",
+        "Republic of Somaliland",
+        "Solnd."
+      ],
+      "summary": "Somaliland is a sovereign state in Eastern Africa. Formal name: Republic of Somaliland.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 5096159,
+      "gdp_md_est": 17836,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "8e213f4c-2757-53c2-8eab-5c800a18cbfa",
+      "name": "Uganda",
+      "tag": "UGA",
+      "map_aliases": [
+        "Uganda",
+        "Republic of Uganda",
+        "Uga."
+      ],
+      "summary": "Uganda is a sovereign state in Eastern Africa. Formal name: Republic of Uganda.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 44269594,
+      "gdp_md_est": 35165,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "67345765-4dc7-5878-9eac-2a23add81b52",
+      "name": "Rwanda",
+      "tag": "RWA",
+      "map_aliases": [
+        "Rwanda",
+        "Republic of Rwanda",
+        "Rwa."
+      ],
+      "summary": "Rwanda is a sovereign state in Eastern Africa. Formal name: Republic of Rwanda.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 12626950,
+      "gdp_md_est": 10354,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    },
+    {
+      "nation_id": "51795992-79d5-53c9-9493-48a54593d272",
+      "name": "Bosnia and Herzegovina",
+      "tag": "BIH",
+      "map_aliases": [
+        "Bosnia and Herzegovina",
+        "Bosnia and Herz.",
+        "B.H."
+      ],
+      "summary": "Bosnia and Herzegovina is a sovereign state in Southern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 3301000,
+      "gdp_md_est": 20164,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "4597ac7c-effd-52aa-a3ef-b11f22d17110",
+      "name": "North Macedonia",
+      "tag": "MKD",
+      "map_aliases": [
+        "North Macedonia",
+        "Republic of North Macedonia",
+        "N. Mac."
+      ],
+      "summary": "North Macedonia is a sovereign state in Southern Europe. Formal name: Republic of North Macedonia.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 2083459,
+      "gdp_md_est": 12547,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "1397930e-6e2d-5bb5-b590-511fd53faa61",
+      "name": "Republic of Serbia",
+      "tag": "SRB",
+      "map_aliases": [
+        "Republic of Serbia",
+        "Serbia",
+        "Serb."
+      ],
+      "summary": "Republic of Serbia is a sovereign state in Southern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 6944975,
+      "gdp_md_est": 51475,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "2045892a-aa0b-578a-bb88-5ea847f39a48",
+      "name": "Montenegro",
+      "tag": "MNE",
+      "map_aliases": [
+        "Montenegro",
+        "Mont."
+      ],
+      "summary": "Montenegro is a sovereign state in Southern Europe.",
+      "trajectory": {
+        "gdp_growth_decade": 0.12,
+        "population_growth_decade": 0.08,
+        "stability_drift_decade": 0,
+        "literacy_growth_decade": 0.04
+      },
+      "population_est": 622137,
+      "gdp_md_est": 5542,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "3. Upper middle income"
+    },
+    {
+      "nation_id": "40399b0a-94e1-5de7-9dc7-cee3332b5fed",
+      "name": "Kosovo",
+      "tag": "KOS",
+      "map_aliases": [
+        "Kosovo",
+        "Republic of Kosovo",
+        "Kos."
+      ],
+      "summary": "Kosovo is a sovereign state in Southern Europe. Formal name: Republic of Kosovo.",
+      "trajectory": {
+        "gdp_growth_decade": 0.15,
+        "population_growth_decade": 0.1,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.05
+      },
+      "population_est": 1794248,
+      "gdp_md_est": 7926,
+      "continent": "Europe",
+      "subregion": "Southern Europe",
+      "economy": "6. Developing region",
+      "income_group": "4. Lower middle income"
+    },
+    {
+      "nation_id": "fd2d692d-02ba-57a8-8d66-711f2ac773e8",
+      "name": "Trinidad and Tobago",
+      "tag": "TTO",
+      "map_aliases": [
+        "Trinidad and Tobago",
+        "Republic of Trinidad and Tobago",
+        "Tr.T."
+      ],
+      "summary": "Trinidad and Tobago is a sovereign state in Caribbean. Formal name: Republic of Trinidad and Tobago. Continent: North America.",
+      "trajectory": {
+        "gdp_growth_decade": 0.1,
+        "population_growth_decade": 0.06,
+        "stability_drift_decade": 0.1,
+        "literacy_growth_decade": 0.03
+      },
+      "population_est": 1394973,
+      "gdp_md_est": 24269,
+      "continent": "North America",
+      "subregion": "Caribbean",
+      "economy": "6. Developing region",
+      "income_group": "2. High income: nonOECD"
+    },
+    {
+      "nation_id": "38fab387-5366-50d9-9772-dd058382208c",
+      "name": "South Sudan",
+      "tag": "SSD",
+      "map_aliases": [
+        "South Sudan",
+        "S. Sudan",
+        "Republic of South Sudan",
+        "S. Sud."
+      ],
+      "summary": "South Sudan is a sovereign state in Eastern Africa. Formal name: Republic of South Sudan.",
+      "trajectory": {
+        "gdp_growth_decade": 0.18,
+        "population_growth_decade": 0.12,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.06
+      },
+      "population_est": 11062113,
+      "gdp_md_est": 11998,
+      "continent": "Africa",
+      "subregion": "Eastern Africa",
+      "economy": "7. Least developed region",
+      "income_group": "5. Low income"
+    }
+  ]
+}

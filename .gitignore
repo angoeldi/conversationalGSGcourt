@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build output & caches
+dist/
+build/
+coverage/
+.vite/
+.cache/
+.eslintcache
+*.tsbuildinfo
+.turbo/
+.tsup/
+apps/server/dist/
+apps/server/.data/
+
+# Local databases (sqlite, etc.)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-shm
+*.sqlite3-wal
+postgres_data/
+pgdata/
+.pgdata/
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

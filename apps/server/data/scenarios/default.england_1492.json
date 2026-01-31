@@ -1,0 +1,876 @@
+{
+  "scenario_id": "a1b2c3d4-5e6f-4a7b-8c9d-0e1f2a3b4c5d",
+  "name": "England, 1492",
+  "start_date": "1492-08-01",
+  "calendar": "gregorian",
+  "geo_pack": {
+    "id": "world_1492",
+    "version": "1"
+  },
+  "player_nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+  "nations": [
+    {
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "England",
+      "tag": "ENG",
+      "government_type": "monarchy",
+      "capital_geo_region_id": "58f2374e-2f08-5db5-b227-1c05d2e30750"
+    },
+    {
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "name": "France",
+      "tag": "FRA",
+      "government_type": "monarchy",
+      "capital_geo_region_id": "0d53afa3-c109-5745-9758-6c81d583da3c"
+    }
+  ],
+  "relations": [
+    {
+      "from_nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "to_nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "value": -32,
+      "treaties": [
+        "etaples_1492"
+      ],
+      "at_war": false
+    },
+    {
+      "from_nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "to_nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "value": -28,
+      "treaties": [
+        "etaples_1492"
+      ],
+      "at_war": false
+    }
+  ],
+  "region_assignments": [
+    {
+      "geo_region_id": "58f2374e-2f08-5db5-b227-1c05d2e30750",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "geo_region_key": "england-london"
+    },
+    {
+      "geo_region_id": "1b8f1ac9-7985-5edd-8c46-ba2e21c6967f",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "geo_region_key": "england-kent"
+    },
+    {
+      "geo_region_id": "1d4c92f1-f33c-5abb-9819-922d617f8b12",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "geo_region_key": "england-wessex"
+    },
+    {
+      "geo_region_id": "234f379a-51b6-5a41-ada1-eb417a6597f7",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "geo_region_key": "england-york"
+    },
+    {
+      "geo_region_id": "95cb0fe2-122a-554f-81c9-890931708b36",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "geo_region_key": "england-cornwall"
+    },
+    {
+      "geo_region_id": "0d53afa3-c109-5745-9758-6c81d583da3c",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "geo_region_key": "france-paris"
+    },
+    {
+      "geo_region_id": "219d114a-54d3-5031-b50a-724a4cd64aea",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "geo_region_key": "france-normandy"
+    },
+    {
+      "geo_region_id": "880b9a9b-76d4-5fe9-a018-5be4e7deae5c",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "geo_region_key": "france-brittany"
+    }
+  ],
+  "nation_snapshots": [
+    {
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "gdp": 5200000,
+      "tax_rate": 0.28,
+      "tax_capacity": 0.55,
+      "compliance": 0.7,
+      "treasury": 42000,
+      "debt": 8000,
+      "stability": 63,
+      "legitimacy": 72,
+      "population": 2400000,
+      "literacy": 0.18,
+      "admin_capacity": 52,
+      "corruption": 0.22,
+      "manpower_pool": 78000,
+      "force_size": 18000,
+      "readiness": 0.62,
+      "supply": 0.58,
+      "war_exhaustion": 8,
+      "tech_level_mil": 38,
+      "laws": [
+        "royal_council",
+        "feudal_dues"
+      ],
+      "institutions": {
+        "tax_office": 3,
+        "navy_board": 2
+      },
+      "culture_mix": {
+        "english": 0.92,
+        "welsh": 0.08
+      },
+      "religion_mix": {
+        "catholic": 0.99,
+        "lollard": 0.01
+      }
+    },
+    {
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "gdp": 8200000,
+      "tax_rate": 0.32,
+      "tax_capacity": 0.6,
+      "compliance": 0.62,
+      "treasury": 31000,
+      "debt": 25000,
+      "stability": 55,
+      "legitimacy": 68,
+      "population": 4200000,
+      "literacy": 0.14,
+      "admin_capacity": 47,
+      "corruption": 0.28,
+      "manpower_pool": 110000,
+      "force_size": 28000,
+      "readiness": 0.58,
+      "supply": 0.52,
+      "war_exhaustion": 12,
+      "tech_level_mil": 40,
+      "laws": [
+        "estates_general"
+      ],
+      "institutions": {
+        "tax_office": 4,
+        "standing_army": 2
+      },
+      "culture_mix": {
+        "french": 0.9,
+        "breton": 0.06,
+        "norman": 0.04
+      },
+      "religion_mix": {
+        "catholic": 0.98,
+        "other": 0.02
+      }
+    }
+  ],
+  "province_snapshots": [
+    {
+      "geo_region_id": "58f2374e-2f08-5db5-b227-1c05d2e30750",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 190000,
+      "productivity": 8.2,
+      "infrastructure": 7.6,
+      "unrest": 18,
+      "compliance_local": 0.82,
+      "garrison": 4000,
+      "resources": [
+        "commerce",
+        "textiles"
+      ],
+      "culture_mix": {
+        "english": 0.95,
+        "welsh": 0.05
+      },
+      "religion_mix": {
+        "catholic": 0.99,
+        "lollard": 0.01
+      },
+      "geo_region_key": "england-london"
+    },
+    {
+      "geo_region_id": "1b8f1ac9-7985-5edd-8c46-ba2e21c6967f",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 140000,
+      "productivity": 6.8,
+      "infrastructure": 6.2,
+      "unrest": 22,
+      "compliance_local": 0.78,
+      "garrison": 2200,
+      "resources": [
+        "shipbuilding",
+        "grain"
+      ],
+      "culture_mix": {
+        "english": 0.96,
+        "welsh": 0.04
+      },
+      "religion_mix": {
+        "catholic": 0.99,
+        "lollard": 0.01
+      },
+      "geo_region_key": "england-kent"
+    },
+    {
+      "geo_region_id": "1d4c92f1-f33c-5abb-9819-922d617f8b12",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 210000,
+      "productivity": 6.4,
+      "infrastructure": 5.8,
+      "unrest": 14,
+      "compliance_local": 0.83,
+      "garrison": 2600,
+      "resources": [
+        "grain",
+        "wool"
+      ],
+      "culture_mix": {
+        "english": 0.93,
+        "welsh": 0.07
+      },
+      "religion_mix": {
+        "catholic": 0.99,
+        "lollard": 0.01
+      },
+      "geo_region_key": "england-wessex"
+    },
+    {
+      "geo_region_id": "234f379a-51b6-5a41-ada1-eb417a6597f7",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 170000,
+      "productivity": 6,
+      "infrastructure": 5.4,
+      "unrest": 26,
+      "compliance_local": 0.71,
+      "garrison": 2400,
+      "resources": [
+        "iron",
+        "wool"
+      ],
+      "culture_mix": {
+        "english": 0.92,
+        "welsh": 0.08
+      },
+      "religion_mix": {
+        "catholic": 0.98,
+        "lollard": 0.02
+      },
+      "geo_region_key": "england-york"
+    },
+    {
+      "geo_region_id": "95cb0fe2-122a-554f-81c9-890931708b36",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "population": 120000,
+      "productivity": 5.2,
+      "infrastructure": 4.8,
+      "unrest": 33,
+      "compliance_local": 0.64,
+      "garrison": 1800,
+      "resources": [
+        "tin",
+        "fish"
+      ],
+      "culture_mix": {
+        "english": 0.88,
+        "welsh": 0.12
+      },
+      "religion_mix": {
+        "catholic": 0.99,
+        "lollard": 0.01
+      },
+      "geo_region_key": "england-cornwall"
+    },
+    {
+      "geo_region_id": "0d53afa3-c109-5745-9758-6c81d583da3c",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "population": 220000,
+      "productivity": 8.1,
+      "infrastructure": 7.2,
+      "unrest": 16,
+      "compliance_local": 0.76,
+      "garrison": 5200,
+      "resources": [
+        "commerce",
+        "textiles"
+      ],
+      "culture_mix": {
+        "french": 0.93,
+        "norman": 0.07
+      },
+      "religion_mix": {
+        "catholic": 0.98,
+        "other": 0.02
+      },
+      "geo_region_key": "france-paris"
+    },
+    {
+      "geo_region_id": "219d114a-54d3-5031-b50a-724a4cd64aea",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "population": 180000,
+      "productivity": 6.5,
+      "infrastructure": 5.9,
+      "unrest": 20,
+      "compliance_local": 0.7,
+      "garrison": 3000,
+      "resources": [
+        "shipbuilding",
+        "grain"
+      ],
+      "culture_mix": {
+        "french": 0.86,
+        "norman": 0.14
+      },
+      "religion_mix": {
+        "catholic": 0.98,
+        "other": 0.02
+      },
+      "geo_region_key": "france-normandy"
+    },
+    {
+      "geo_region_id": "880b9a9b-76d4-5fe9-a018-5be4e7deae5c",
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "population": 150000,
+      "productivity": 5.6,
+      "infrastructure": 5.1,
+      "unrest": 24,
+      "compliance_local": 0.68,
+      "garrison": 2400,
+      "resources": [
+        "salt",
+        "fish"
+      ],
+      "culture_mix": {
+        "french": 0.82,
+        "breton": 0.18
+      },
+      "religion_mix": {
+        "catholic": 0.98,
+        "other": 0.02
+      },
+      "geo_region_key": "france-brittany"
+    }
+  ],
+  "characters": [
+    {
+      "character_id": "c1111111-2222-4b33-8c44-555555555555",
+      "name": "Henry VII",
+      "title": "King of England",
+      "portrait_prompt": "stern Tudor king in dark velvet, wary eyes",
+      "bio": "A cautious monarch consolidating the Tudor claim after years of civil strife.",
+      "traits": [
+        "ruler",
+        "cautious"
+      ],
+      "skills": {
+        "diplomacy": 62,
+        "finance": 71,
+        "war": 48,
+        "interior": 54,
+        "intrigue": 57,
+        "admin": 66
+      },
+      "advisor_model": {
+        "accuracy": 0.35,
+        "reliability": 0.8,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.95
+      }
+    },
+    {
+      "character_id": "c2222222-3333-4c44-9d55-666666666666",
+      "name": "Arthur Tudor",
+      "title": "Prince of Wales",
+      "bio": "Young heir to the Tudor dynasty, raised for a diplomatic future.",
+      "traits": [
+        "heir"
+      ],
+      "skills": {
+        "diplomacy": 45,
+        "finance": 36,
+        "war": 28,
+        "interior": 40,
+        "intrigue": 32,
+        "admin": 38
+      },
+      "advisor_model": {
+        "accuracy": 0.2,
+        "reliability": 0.7,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.9
+      }
+    },
+    {
+      "character_id": "c3333333-4444-4d55-8e66-777777777777",
+      "name": "John Morton",
+      "title": "Lord Chancellor",
+      "portrait_prompt": "older cleric with sharp eyes, crimson robes",
+      "bio": "A seasoned administrator and trusted adviser in legal matters.",
+      "traits": [
+        "legalist"
+      ],
+      "skills": {
+        "diplomacy": 58,
+        "finance": 63,
+        "war": 32,
+        "interior": 66,
+        "intrigue": 44,
+        "admin": 78
+      },
+      "advisor_model": {
+        "accuracy": 0.67,
+        "reliability": 0.82,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.88
+      }
+    },
+    {
+      "character_id": "c4444444-5555-4e66-9f77-888888888888",
+      "name": "Reginald Bray",
+      "title": "Lord Treasurer",
+      "portrait_prompt": "merchant-trained counselor with ledger and seal",
+      "bio": "Master of the king's finances, pragmatic and exacting.",
+      "traits": [
+        "frugal"
+      ],
+      "skills": {
+        "diplomacy": 45,
+        "finance": 80,
+        "war": 35,
+        "interior": 52,
+        "intrigue": 40,
+        "admin": 71
+      },
+      "advisor_model": {
+        "accuracy": 0.71,
+        "reliability": 0.76,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.84
+      }
+    },
+    {
+      "character_id": "c5555555-6666-4f77-8a88-999999999999",
+      "name": "Giles Daubeney",
+      "title": "Lord Chamberlain",
+      "portrait_prompt": "battle-scarred noble in simple armor",
+      "bio": "Veteran commander tasked with keeping the realm's levies ready.",
+      "traits": [
+        "pragmatic"
+      ],
+      "skills": {
+        "diplomacy": 41,
+        "finance": 38,
+        "war": 72,
+        "interior": 46,
+        "intrigue": 35,
+        "admin": 58
+      },
+      "advisor_model": {
+        "accuracy": 0.6,
+        "reliability": 0.61,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.79
+      }
+    },
+    {
+      "character_id": "c6666666-7777-4a88-9b99-aaaaaaaaaaaa",
+      "name": "Thomas Howard",
+      "title": "Envoy to the Continent",
+      "portrait_prompt": "sharp-featured noble in dark cloak",
+      "bio": "Hard-nosed diplomat managing fragile continental relations.",
+      "traits": [
+        "hawk"
+      ],
+      "skills": {
+        "diplomacy": 69,
+        "finance": 42,
+        "war": 50,
+        "interior": 40,
+        "intrigue": 58,
+        "admin": 55
+      },
+      "advisor_model": {
+        "accuracy": 0.58,
+        "reliability": 0.64,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.8
+      }
+    },
+    {
+      "character_id": "c7777777-8888-4b99-8caa-bbbbbbbbbbbb",
+      "name": "Hugh Denys",
+      "title": "Keeper of the Privy Purse",
+      "portrait_prompt": "quiet administrator with a heavy ring of keys",
+      "bio": "Trusted household officer focused on internal stability and compliance.",
+      "traits": [
+        "methodical"
+      ],
+      "skills": {
+        "diplomacy": 39,
+        "finance": 55,
+        "war": 30,
+        "interior": 68,
+        "intrigue": 42,
+        "admin": 63
+      },
+      "advisor_model": {
+        "accuracy": 0.57,
+        "reliability": 0.8,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.83
+      }
+    },
+    {
+      "character_id": "c8888888-9999-4caa-9dbb-cccccccccccc",
+      "name": "William Stanley",
+      "title": "Master of Whisperers",
+      "portrait_prompt": "shadowed courtier with guarded smile",
+      "bio": "Runs the crown's informal network of informants and couriers.",
+      "traits": [
+        "spymaster"
+      ],
+      "skills": {
+        "diplomacy": 46,
+        "finance": 40,
+        "war": 44,
+        "interior": 48,
+        "intrigue": 81,
+        "admin": 52
+      },
+      "advisor_model": {
+        "accuracy": 0.62,
+        "reliability": 0.55,
+        "bias": {},
+        "scope": {}
+      },
+      "loyalties": {
+        "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c": 0.7
+      }
+    }
+  ],
+  "offices": [
+    {
+      "office_id": "f1111111-1111-4111-8111-111111111111",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "Foreign Secretary",
+      "domain": "foreign",
+      "rank": 6
+    },
+    {
+      "office_id": "f2222222-2222-4222-8222-222222222222",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "Interior Minister",
+      "domain": "interior",
+      "rank": 6
+    },
+    {
+      "office_id": "f3333333-3333-4333-8333-333333333333",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "Lord Treasurer",
+      "domain": "finance",
+      "rank": 7
+    },
+    {
+      "office_id": "f4444444-4444-4444-8444-444444444444",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "War Minister",
+      "domain": "war",
+      "rank": 7
+    },
+    {
+      "office_id": "f5555555-5555-4555-8555-555555555555",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "Master of Whisperers",
+      "domain": "intelligence",
+      "rank": 6
+    },
+    {
+      "office_id": "f6666666-6666-4666-8666-666666666666",
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "name": "Lord Chancellor",
+      "domain": "chancellery",
+      "rank": 7
+    }
+  ],
+  "appointments": [
+    {
+      "office_id": "f1111111-1111-4111-8111-111111111111",
+      "character_id": "c6666666-7777-4a88-9b99-aaaaaaaaaaaa",
+      "start_turn": 0
+    },
+    {
+      "office_id": "f2222222-2222-4222-8222-222222222222",
+      "character_id": "c7777777-8888-4b99-8caa-bbbbbbbbbbbb",
+      "start_turn": 0
+    },
+    {
+      "office_id": "f3333333-3333-4333-8333-333333333333",
+      "character_id": "c4444444-5555-4e66-9f77-888888888888",
+      "start_turn": 0
+    },
+    {
+      "office_id": "f4444444-4444-4444-8444-444444444444",
+      "character_id": "c5555555-6666-4f77-8a88-999999999999",
+      "start_turn": 0
+    },
+    {
+      "office_id": "f5555555-5555-4555-8555-555555555555",
+      "character_id": "c8888888-9999-4caa-9dbb-cccccccccccc",
+      "start_turn": 0
+    },
+    {
+      "office_id": "f6666666-6666-4666-8666-666666666666",
+      "character_id": "c3333333-4444-4d55-8e66-777777777777",
+      "start_turn": 0
+    }
+  ],
+  "succession": [
+    {
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "method": "primogeniture",
+      "rules": {
+        "gender_preference": "male_preference"
+      },
+      "current": [
+        "c2222222-3333-4c44-9d55-666666666666"
+      ]
+    }
+  ],
+  "initial_tasks": [
+    {
+      "task_type": "intrigue",
+      "owner_character_id": "c8888888-9999-4caa-9dbb-cccccccccccc",
+      "urgency": "high",
+      "prompt": "The Foreign Office reports unusual naval activity in Brest. Do we investigate quietly, or press for answers through diplomatic channels?",
+      "context_overrides": {
+        "allowed_action_types": [
+          "send_spy",
+          "send_envoy",
+          "improve_relations"
+        ]
+      }
+    },
+    {
+      "task_type": "diplomacy",
+      "owner_character_id": "c6666666-7777-4a88-9b99-aaaaaaaaaaaa",
+      "urgency": "medium",
+      "prompt": "French envoys ask whether England will recognize any new French rights over Brittany. Draft a reply or hold a formal audience."
+    },
+    {
+      "task_type": "finance",
+      "owner_character_id": "c4444444-5555-4e66-9f77-888888888888",
+      "urgency": "medium",
+      "prompt": "Customs receipts are below projection. Approve a temporary wool export levy to stabilize the treasury, or seek alternative cuts?"
+    },
+    {
+      "task_type": "war",
+      "owner_character_id": "c5555555-6666-4f77-8a88-999999999999",
+      "urgency": "high",
+      "prompt": "Calais garrisons report dwindling powder stores. Authorize a resupply convoy this quarter or divert funds to coastal patrols?"
+    },
+    {
+      "task_type": "interior",
+      "owner_character_id": "c7777777-8888-4b99-8caa-bbbbbbbbbbbb",
+      "urgency": "low",
+      "prompt": "Cornish petitions object to tin tithes. Decide on relief, deferment, or a firm enforcement order."
+    }
+  ],
+  "wiki_sources": [
+    {
+      "title": "Henry VII of England",
+      "url": "https://en.wikipedia.org/wiki/Henry_VII_of_England",
+      "excerpt": "First Tudor monarch, emphasizing fiscal reform and dynastic stability."
+    },
+    {
+      "title": "Treaty of Etaples",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_%C3%89taples",
+      "excerpt": "1492 treaty between England and France that eased tensions and secured payments."
+    }
+  ],
+  "uncertainty_notes": [
+    "Province populations and productivity values are simplified placeholders for a small default scenario."
+  ],
+  "nation_profiles": [
+    {
+      "nation_id": "b3c2fda1-4e6b-4c7f-8a2b-2d9a1e2f3b4c",
+      "summary": "England emerges from the Wars of the Roses under the Tudors, consolidating royal authority, restoring finances, and turning toward maritime ventures.",
+      "trajectory": {
+        "gdp_growth_decade": 0.045,
+        "population_growth_decade": 0.03,
+        "stability_drift_decade": 1.4,
+        "literacy_growth_decade": 0.012
+      },
+      "map_aliases": [
+        "England",
+        "Kingdom of England",
+        "Tudor England",
+        "English Crown"
+      ]
+    },
+    {
+      "nation_id": "d6a1f2b3-9c4d-4a8b-9e1f-3c2b1a0d9e8f",
+      "summary": "France is centralizing after the Hundred Years' War, strengthening royal institutions, and preparing for ambitious ventures beyond its borders.",
+      "trajectory": {
+        "gdp_growth_decade": 0.055,
+        "population_growth_decade": 0.035,
+        "stability_drift_decade": 1.0,
+        "literacy_growth_decade": 0.013
+      },
+      "map_aliases": [
+        "France",
+        "Kingdom of France"
+      ]
+    },
+    {
+      "nation_id": "fa5f2afa-513b-582b-a981-6d812abddb80",
+      "summary": "Spain is newly unified under Ferdinand and Isabella; the Reconquista has concluded and the crown is poised for overseas expansion.",
+      "trajectory": {
+        "gdp_growth_decade": 0.06,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.8,
+        "literacy_growth_decade": 0.015
+      },
+      "map_aliases": [
+        "Spain",
+        "Crown of Castile",
+        "Crown of Aragon",
+        "Catholic Monarchs"
+      ]
+    },
+    {
+      "nation_id": "974ad2eb-485f-59c6-90cd-f6066ec783e9",
+      "summary": "Portugal leads Atlantic navigation and trade networks, maintaining a compact but capable maritime state.",
+      "trajectory": {
+        "gdp_growth_decade": 0.055,
+        "population_growth_decade": 0.03,
+        "stability_drift_decade": 0.6,
+        "literacy_growth_decade": 0.012
+      },
+      "map_aliases": [
+        "Portugal",
+        "Kingdom of Portugal"
+      ]
+    },
+    {
+      "nation_id": "aaec6dd3-ecb9-58c6-a022-6a0c9a1402a2",
+      "summary": "The Holy Roman Empire is a patchwork of principalities and free cities; imperial authority is limited and politics remain fragmented.",
+      "trajectory": {
+        "gdp_growth_decade": 0.045,
+        "population_growth_decade": 0.035,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.015
+      },
+      "map_aliases": [
+        "Germany",
+        "Holy Roman Empire",
+        "HRE"
+      ]
+    },
+    {
+      "nation_id": "9b57fbba-d1a6-57bc-8a5b-460a5b025532",
+      "summary": "The Ottoman Empire dominates Anatolia and the eastern Mediterranean, with a formidable military apparatus and expanding influence.",
+      "trajectory": {
+        "gdp_growth_decade": 0.06,
+        "population_growth_decade": 0.045,
+        "stability_drift_decade": 0.7,
+        "literacy_growth_decade": 0.01
+      },
+      "map_aliases": [
+        "Turkey",
+        "Ottoman Empire",
+        "Sublime Porte"
+      ]
+    },
+    {
+      "nation_id": "a8ee5eca-d1c6-5930-b2f6-c4b83b7a9a51",
+      "summary": "Poland is a major Central European kingdom with a powerful nobility and a growing interest in Baltic trade.",
+      "trajectory": {
+        "gdp_growth_decade": 0.045,
+        "population_growth_decade": 0.04,
+        "stability_drift_decade": 0.2,
+        "literacy_growth_decade": 0.012
+      },
+      "map_aliases": [
+        "Poland",
+        "Kingdom of Poland",
+        "Polish Crown"
+      ]
+    },
+    {
+      "nation_id": "e77abf97-f222-544c-9cd0-89012acc55e0",
+      "summary": "Russia is consolidating around Moscow, expanding its influence eastward while rebuilding administrative capacity.",
+      "trajectory": {
+        "gdp_growth_decade": 0.05,
+        "population_growth_decade": 0.045,
+        "stability_drift_decade": 0.3,
+        "literacy_growth_decade": 0.01
+      },
+      "map_aliases": [
+        "Russia",
+        "Muscovy",
+        "Grand Duchy of Moscow"
+      ]
+    },
+    {
+      "nation_id": "15903949-aeb1-5773-9ee5-7e70ea5e578f",
+      "summary": "Italy is a tapestry of wealthy city-states and rival courts, thriving on commerce while exposed to great-power rivalry.",
+      "trajectory": {
+        "gdp_growth_decade": 0.05,
+        "population_growth_decade": 0.03,
+        "stability_drift_decade": -0.1,
+        "literacy_growth_decade": 0.02
+      },
+      "map_aliases": [
+        "Italy",
+        "Italian states"
+      ]
+    },
+    {
+      "nation_id": "4d3ed9f0-9a22-50a2-92ca-8bc45cb09640",
+      "summary": "Austria anchors Habsburg power in Central Europe, balancing dynastic diplomacy with frontier pressures.",
+      "trajectory": {
+        "gdp_growth_decade": 0.045,
+        "population_growth_decade": 0.035,
+        "stability_drift_decade": 0.4,
+        "literacy_growth_decade": 0.012
+      },
+      "map_aliases": [
+        "Austria",
+        "Archduchy of Austria",
+        "Habsburg Austria"
+      ]
+    },
+    {
+      "nation_id": "2b54bee0-dd2d-5645-a197-6400015565f4",
+      "summary": "Hungary guards the Danube frontier and faces sustained pressure from Ottoman expansion.",
+      "trajectory": {
+        "gdp_growth_decade": 0.04,
+        "population_growth_decade": 0.035,
+        "stability_drift_decade": -0.2,
+        "literacy_growth_decade": 0.01
+      },
+      "map_aliases": [
+        "Hungary",
+        "Kingdom of Hungary"
+      ]
+    }
+  ]
+}

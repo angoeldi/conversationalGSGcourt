@@ -1,0 +1,22 @@
+{
+  "name": "@thecourt/engine",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "lint": "echo 'lint (repo-level)';",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@thecourt/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
