@@ -46,3 +46,4 @@
 - Update relevant schema + Zod mirror.
 - Add/adjust tests for schema validation and engine invariants.
 - Run `pnpm -r test` and `pnpm -r typecheck`.
+- Update `TODO.md` and `PGH_REPORT.md` (when present) before committing; flag if a large work package finished without a TODO refresh.
