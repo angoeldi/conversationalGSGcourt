@@ -624,7 +624,7 @@ function summarizePrompt(prompt: string): string {
 
 function resolveGameModel(provider: "openai" | "openrouter" | "groq", override?: string): string {
   if (override?.trim()) return override.trim();
-  if (provider === "openrouter") return env.OPENROUTER_MODEL;
+  if (provider === "openrouter") return env.OPENROUTER_MODEL?.trim() || env.LLM_MODEL;
   if (provider === "groq") return env.GROQ_MODEL;
   return env.LLM_MODEL;
 }

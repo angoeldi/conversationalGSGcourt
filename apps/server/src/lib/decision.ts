@@ -117,8 +117,9 @@ export async function parseDecision(
     .join("\n")}\n\nPlayer decision text:\n${playerText}\n\nReturn two bundles: A = faithful, B = conservative alternative.`;
 
   const llm = options.provider ?? getLlmProvider();
+  const openRouterModel = env.OPENROUTER_MODEL?.trim();
   const model = options.model ?? (env.LLM_PROVIDER === "openrouter"
-    ? env.OPENROUTER_MODEL
+    ? openRouterModel || env.LLM_MODEL
     : env.LLM_PROVIDER === "groq"
       ? env.GROQ_MODEL
       : env.LLM_MODEL);

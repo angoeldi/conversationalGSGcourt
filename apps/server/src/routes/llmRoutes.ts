@@ -326,12 +326,13 @@ function formatSources(sources: TaskContext["sources"] | undefined): string {
 
 function resolveModel(provider: "openai" | "openrouter" | "groq", kind: "builder" | "game", override?: string): string {
   if (override?.trim()) return override.trim();
+  const openRouterModel = env.OPENROUTER_MODEL?.trim();
   if (kind === "builder") {
-    if (provider === "openrouter") return env.OPENROUTER_MODEL;
+    if (provider === "openrouter") return openRouterModel || env.LLM_BUILDER_MODEL;
     if (provider === "groq") return env.GROQ_MODEL;
     return env.LLM_BUILDER_MODEL;
   }
-  if (provider === "openrouter") return env.OPENROUTER_MODEL;
+  if (provider === "openrouter") return openRouterModel || env.LLM_MODEL;
   if (provider === "groq") return env.GROQ_MODEL;
   return env.LLM_MODEL;
 }

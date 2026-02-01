@@ -37,17 +37,17 @@ const Env = z
     DATABASE_URL: z.string().min(1),
 
     LLM_PROVIDER: z.enum(["openai", "openrouter", "groq"]).default("openai"),
-    LLM_MODEL: z.string().default("gpt-4o-mini"),
+    LLM_MODEL: z.string().default("gpt-5-nano"),
 
     LLM_BUILDER_PROVIDER: z.enum(["openai", "openrouter", "groq"]).default("openai"),
-    LLM_BUILDER_MODEL: z.string().default("gpt-4o"),
+    LLM_BUILDER_MODEL: z.string().default("gpt-5.2"),
 
     OPENAI_API_KEY: z.string().optional(),
     OPENAI_BASE_URL: z.string().optional(),
 
     OPENROUTER_API_KEY: z.string().optional(),
     OPENROUTER_BASE_URL: z.string().default("https://openrouter.ai/api/v1"),
-    OPENROUTER_MODEL: z.string().default("openai/gpt-4o-mini"),
+    OPENROUTER_MODEL: z.string().optional(),
 
     GROQ_API_KEY: z.string().optional(),
     GROQ_BASE_URL: z.string().default("https://api.groq.com/openai/v1"),

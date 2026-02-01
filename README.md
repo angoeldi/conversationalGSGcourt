@@ -1,6 +1,6 @@
 # The Court (spec kit)
 
-Conversational GSG concept: a deterministic nation model with a generative court UI.
+Conversational GSG concept: a deterministic nation model with a UI scaffold for generative court content.
 
 ![The Court UI](docs/assets/court_screenshot.png)
 
@@ -8,8 +8,8 @@ Conversational GSG concept: a deterministic nation model with a generative court
 
 - There are some kinks in the maps and scenario generation yields varying results.
 - For testing, use the default England 1492 scenario.
-- Your experience will vary by LLM (default config uses OpenAI gpt-4o-mini; Groq OSS-20b and OpenRouter are supported; images are Black Forest Schnell via the free Hugging Face tier).
-- Design principle: keep the UI static and content generative to keep costs low and the learning curve flat.
+- Your experience will vary by LLM (default config uses Groq OSS-20b; OpenAI gpt-5-nano for gameplay and gpt-5.2 for the scenario builder are supported; OpenRouter is supported; images are Black Forest Schnell via the free Hugging Face tier).
+- Design principles: keep the UI static and content generative to keep costs low and the learning curve flat; treat the engine as ground truth where only Actions mutate state.
 - Maps are not generated here because of consistency issues.
 - Feedback is stored in the DB per deployed instance; multiple users are supported, but auth is basic.
 - Development is set up for Codex (copy and adapt `AGENTS.md` and `.codex/skills` for your agent).
