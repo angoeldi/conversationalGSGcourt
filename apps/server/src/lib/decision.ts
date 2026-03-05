@@ -6,27 +6,11 @@ import type {
 } from "@thecourt/shared";
 import { DecisionParseOutput as DecisionParseOutputSchema, Action as ActionSchema, ActionTypes } from "@thecourt/shared";
 import type { LLMProvider } from "../providers/types";
-import { getLlmProvider } from "../providers";
-import { env } from "../config";
 import { geoRegionKeyToUuid, isUuid } from "./geoRegion";
+import { DECISION_SYSTEM_PROMPT } from "./prompts";
 
-// Prompt: docs/prompts.md#2-decision-parser
-const DECISION_SYSTEM = `You translate the player's intent into EXACTLY TWO actionable bundles.
-
-Rules:
-- Output JSON matching the schema.
-- Use the key "proposed_bundles" (never "bundles").
-- Each bundle must contain 1+ actions.
-- Each bundle must use "label" (never "name").
-- Action shape is { "type": "...", "params": { ... } }. Never put params at the action top level.
-- Only use the canonical parameter names from the action schema.
-- Prefer actions allowed by constraints.allowed_action_types when provided.
-- Prefer constraints.suggested_action_types when available.
-- Never use constraints.forbidden_action_types.
-- If no canonical action fits, use "freeform_effect" with explicit deltas.
-- Deltas are additive (relative), not absolute values; keep them modest and scenario-consistent.
-- Never invent new action types.
-- If the player asked for something impossible, put a clarifying question and make bundle B a minimal safe alternative.`;
+// Prompt source: docs/prompts.md#2-decision-parser, exported from ./prompts.
+const DECISION_SYSTEM = DECISION_SYSTEM_PROMPT;
 
 type ActionKind = ActionType["type"];
 
@@ -116,13 +100,7 @@ export async function parseDecision(
     .map((f) => `- [${f.fact_id}] (${f.domain}, conf=${f.confidence}): ${f.statement} = ${String(f.value)}`)
     .join("\n")}\n\nPlayer decision text:\n${playerText}\n\nReturn two bundles: A = faithful, B = conservative alternative.`;
 
-  const llm = options.provider ?? getLlmProvider();
-  const openRouterModel = env.OPENROUTER_MODEL?.trim();
-  const model = options.model ?? (env.LLM_PROVIDER === "openrouter"
-    ? openRouterModel || env.LLM_MODEL
-    : env.LLM_PROVIDER === "groq"
-      ? env.GROQ_MODEL
-      : env.LLM_MODEL);
+  const { llm, model } = await resolveDecisionRuntime(options);
 
   try {
     const parsed = await llm.parseWithSchema({
@@ -161,6 +139,23 @@ export async function parseDecision(
     throw new Error(validated.error.message);
   }
   return validated.data;
+}
+
+async function resolveDecisionRuntime(options: { provider?: LLMProvider; model?: string }) {
+  if (options.provider && options.model) {
+    return { llm: options.provider, model: options.model };
+  }
+
+  const [{ getLlmProvider }, { env }] = await Promise.all([import("../providers"), import("../config")]);
+  const llm = options.provider ?? getLlmProvider();
+  const openRouterModel = env.OPENROUTER_MODEL?.trim();
+  const model = options.model ?? (env.LLM_PROVIDER === "openrouter"
+    ? openRouterModel || env.LLM_MODEL
+    : env.LLM_PROVIDER === "groq"
+      ? env.GROQ_MODEL
+      : env.LLM_MODEL);
+
+  return { llm, model };
 }
 
 function formatSources(sources: TaskContext["sources"] | undefined): string {
