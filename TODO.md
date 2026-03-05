@@ -92,6 +92,8 @@
     - One intentional mismatch test confirms guardrail behavior.
   - **Rough priority:** P1
 
+- [x] Centralize decision system prompt in `apps/server/src/lib/prompts.ts` and keep docs/tests in sync.
+
 ## Confirm
 
 - **Objective:** Confirm 1492 GDP/pop override integrity after any balancing pass.
