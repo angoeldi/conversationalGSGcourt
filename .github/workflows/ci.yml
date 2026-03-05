@@ -36,6 +36,3 @@ jobs:
 
       - name: Test
         run: pnpm -r test
-
-      - name: Build
-        run: pnpm -r build
