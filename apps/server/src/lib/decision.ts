@@ -40,7 +40,8 @@ const ACTION_PARAM_KEYS: Record<ActionKind, Set<string>> = {
   leak_story: new Set(["target", "narrative", "plausibility"]),
   freeform_effect: new Set(["summary", "target_nation_id", "nation_deltas", "province_id", "province_deltas", "relation_deltas", "limit_deltas", "note"]),
   create_committee: new Set(["topic", "chair_character_id", "duration_weeks", "budget"]),
-  apply_trajectory_modifier: new Set(["target_nation_id", "metric", "delta", "duration_weeks", "note"])
+  apply_trajectory_modifier: new Set(["target_nation_id", "metric", "delta", "duration_weeks", "note"]),
+  apply_unresolved_tasks_penalty: new Set(["target_nation_id", "unresolved_task_count", "stability_delta", "legitimacy_delta", "reason"])
 };
 
 const PARAM_ALIASES: Array<{ from: string; to: string }> = [

@@ -311,6 +311,12 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
           let working = structuredClone(world_state);
           let autoDecidedTasks = 0;
 
+          const openTaskCountBeforeRow = (await c.query(
+            "SELECT COUNT(*)::int AS count FROM tasks WHERE game_id = $1 AND state = 'open'",
+            [game.game_id]
+          )).rows as Array<{ count: number }>;
+          const unresolvedOpenTasksBefore = openTaskCountBeforeRow[0]?.count ?? 0;
+
           const ctx = {
             turn_index: working.turn_index,
             turn_seed: working.turn_seed,
@@ -363,6 +369,41 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
               autoDecidedTasks += 1;
             }
           }
+
+          const unresolvedAfterAutoRow = (await c.query(
+            "SELECT COUNT(*)::int AS count FROM tasks WHERE game_id = $1 AND state = 'open'",
+            [game.game_id]
+          )).rows as Array<{ count: number }>;
+          const unresolvedOpenTasksForPenalty = unresolvedAfterAutoRow[0]?.count ?? 0;
+          const unresolvedTasksPenalty = computeUnresolvedTaskPenalty(unresolvedOpenTasksForPenalty);
+          const penaltyNationId = working.player_nation_id ?? scenario.player_nation_id;
+
+          if (unresolvedTasksPenalty.penalty_applied) {
+            const penaltyAction: Action = {
+              type: "apply_unresolved_tasks_penalty",
+              params: {
+                target_nation_id: penaltyNationId,
+                unresolved_task_count: unresolvedOpenTasksForPenalty,
+                stability_delta: unresolvedTasksPenalty.stability_delta,
+                legitimacy_delta: unresolvedTasksPenalty.legitimacy_delta,
+                reason: "unresolved_open_tasks"
+              }
+            };
+            await c.query(
+              `INSERT INTO actions (action_id, game_id, nation_id, type, params, source_task_id, status)
+               VALUES ($1, $2, $3, $4, $5, $6, $7)`,
+              [
+                randomUUID(),
+                game.game_id,
+                penaltyNationId,
+                penaltyAction.type,
+                penaltyAction.params,
+                null,
+                "queued"
+              ]
+            );
+          }
+
           const queuedActions = (await c.query(
             "SELECT action_id, type, params FROM actions WHERE game_id = $1 AND status = 'queued' ORDER BY created_at",
             [game.game_id]
@@ -511,6 +552,9 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
             processed_actions: queuedActions.length,
             processed_decisions: queuedDecisions.length,
             auto_decided_tasks: autoDecidedTasks,
+            unresolved_open_tasks_before: unresolvedOpenTasksBefore,
+            unresolved_open_tasks_penalized: unresolvedOpenTasksForPenalty,
+            unresolved_tasks_penalty: unresolvedTasksPenalty,
             rejected_actions: rejectedActions
           };
         } catch (err) {
@@ -528,6 +572,28 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
       return reply.status(500).send({ error: message });
     }
   });
+}
+
+function computeUnresolvedTaskPenalty(unresolvedOpenTasks: number): {
+  penalty_applied: boolean;
+  stability_delta: number;
+  legitimacy_delta: number;
+} {
+  if (unresolvedOpenTasks <= 0) {
+    return {
+      penalty_applied: false,
+      stability_delta: 0,
+      legitimacy_delta: 0
+    };
+  }
+
+  const stabilityDelta = -Math.min(6, unresolvedOpenTasks);
+  const legitimacyDelta = -Math.min(4, Math.ceil(unresolvedOpenTasks / 2));
+  return {
+    penalty_applied: true,
+    stability_delta: stabilityDelta,
+    legitimacy_delta: legitimacyDelta
+  };
 }
 
 function computeTurnDate(startDate: string, turnIndex: number): string {

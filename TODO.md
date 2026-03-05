@@ -95,6 +95,8 @@
 
 - [x] Centralize decision system prompt in `apps/server/src/lib/prompts.ts` and keep docs/tests in sync.
 
+- [ ] Tune unresolved-open-task penalty curve against playtest data.
+
 ## Confirm
 
 - **Objective:** Confirm 1492 GDP/pop override integrity after any balancing pass.

@@ -706,6 +706,30 @@ export function applySingleAction(state: WorldState, action: Action, ctx: Engine
       return { next_state: state, effects };
     }
 
+    case "apply_unresolved_tasks_penalty": {
+      const target = action.params.target_nation_id;
+      const missing = requireNation(target);
+      if (missing) return missing;
+
+      const nation = state.nations[target];
+      state.nations[target] = patchNation(nation, {
+        stability: clamp(nation.stability + action.params.stability_delta, 0, 100),
+        legitimacy: clamp(nation.legitimacy + action.params.legitimacy_delta, 0, 100)
+      });
+
+      effects.push({
+        effect_type: "governance.unresolved_tasks_penalty_applied",
+        delta: {
+          target_nation_id: target,
+          unresolved_task_count: action.params.unresolved_task_count,
+          stability_delta: action.params.stability_delta,
+          legitimacy_delta: action.params.legitimacy_delta
+        },
+        audit: { reason: action.params.reason }
+      });
+      return { next_state: state, effects };
+    }
+
     case "freeform_effect": {
       const limitDeltas = Boolean(action.params.limit_deltas);
       const requestedNationId = action.params.target_nation_id;

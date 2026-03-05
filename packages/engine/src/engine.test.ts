@@ -145,6 +145,29 @@ describe("engine", () => {
     expect(effects.some((e) => e.effect_type === "action.rejected")).toBe(true);
   });
 
+
+
+  it("applies unresolved-task penalties as explicit governance effects", () => {
+    const state = mkState();
+    const ctx = { turn_index: 0, turn_seed: 123, now: "1492-08-01" };
+    const action = {
+      type: "apply_unresolved_tasks_penalty" as const,
+      params: {
+        target_nation_id: "11111111-1111-1111-1111-111111111111",
+        unresolved_task_count: 4,
+        stability_delta: -4,
+        legitimacy_delta: -2,
+        reason: "unresolved_open_tasks"
+      }
+    };
+
+    const { next_state, effects } = applyActionBundle(state, [action], ctx);
+    const player = next_state.nations["11111111-1111-1111-1111-111111111111"];
+    expect(player.stability).toBe(66);
+    expect(player.legitimacy).toBe(73);
+    expect(effects.some((e) => e.effect_type === "governance.unresolved_tasks_penalty_applied")).toBe(true);
+  });
+
   it("applies freeform effects with clamping", () => {
     const state = mkState();
     const ctx = { turn_index: 0, turn_seed: 123, now: "1492-08-01" };
