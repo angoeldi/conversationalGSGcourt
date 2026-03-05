@@ -73,6 +73,7 @@
   - **Rough priority:** P2
 
 ## Systems
+- [x] Remove non-actionable `pnpm -r build` CI step that was failing consistently without signal.
 - [x] Add deterministic per-turn task generation tuning (turn phase, pressure, recent mix, nation stress) and wire it through game route generation.
 - [x] Add constrained task-generation header knobs for continuity/diversity/stress experimentation.
 
