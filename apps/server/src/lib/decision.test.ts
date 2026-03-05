@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { DecisionParseOutput, TaskContext } from "@thecourt/shared";
-import { normalizeDecisionParseOutput } from "./decision";
+import { beforeAll } from "vitest";
+
+let normalizeDecisionParseOutput: typeof import("./decision")["normalizeDecisionParseOutput"];
+
+beforeAll(async () => {
+  process.env.DATABASE_URL = process.env.DATABASE_URL ?? "postgres://test";
+  ({ normalizeDecisionParseOutput } = await import("./decision"));
+});
 
 const baseContext = TaskContext.parse({
   task_id: "11111111-1111-1111-8111-111111111111",

@@ -10,4 +10,6 @@
 
 ## Systems
 
+- [ ] Tune unresolved-open-task penalty curve against playtest data.
+
 ## Confirm

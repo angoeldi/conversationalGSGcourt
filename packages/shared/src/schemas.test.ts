@@ -7,6 +7,7 @@ import { TaskContext } from "./schemas/taskContext";
 import { Scenario } from "./schemas/scenario";
 import { ActionEffect } from "./schemas/actionEffect";
 import { WorldState } from "./schemas/worldState";
+import { Action } from "./schemas/action";
 
 describe("schemas", () => {
   it("decision parser output is strict and requires 2 bundles", () => {
@@ -90,6 +91,22 @@ describe("schemas", () => {
       audit: { note: "test" }
     };
     expect(ActionEffect.parse(effect).effect_type).toBe("diplomacy.envoy_sent");
+  });
+
+
+
+  it("accepts unresolved-task penalty actions", () => {
+    const action = {
+      type: "apply_unresolved_tasks_penalty",
+      params: {
+        target_nation_id: "11111111-1111-1111-1111-111111111111",
+        unresolved_task_count: 2,
+        stability_delta: -2,
+        legitimacy_delta: -1,
+        reason: "unresolved_open_tasks"
+      }
+    };
+    expect(Action.parse(action).type).toBe("apply_unresolved_tasks_penalty");
   });
 
   it("world state validates with required snapshots", () => {

@@ -38,6 +38,7 @@ export const ActionTypes = [
   "freeform_effect",
   "create_committee",
   "apply_trajectory_modifier",
+  "apply_unresolved_tasks_penalty",
 ] as const;
 
 export type ActionType = (typeof ActionTypes)[number];
@@ -324,6 +325,16 @@ export const ApplyTrajectoryModifierParams = z
   })
   .strict();
 
+export const ApplyUnresolvedTasksPenaltyParams = z
+  .object({
+    target_nation_id: UUID,
+    unresolved_task_count: z.number().int().min(1),
+    stability_delta: z.number().max(0),
+    legitimacy_delta: z.number().max(0),
+    reason: NonEmpty.default("unresolved_open_tasks")
+  })
+  .strict();
+
 export const Action = z.discriminatedUnion("type", [
   z.object({ type: z.literal("send_spy"), params: SendSpyParams }).strict(),
   z.object({ type: z.literal("counterintelligence"), params: CounterIntelligenceParams }).strict(),
@@ -351,6 +362,7 @@ export const Action = z.discriminatedUnion("type", [
   z.object({ type: z.literal("freeform_effect"), params: FreeformEffectParams }).strict(),
   z.object({ type: z.literal("create_committee"), params: CreateCommitteeParams }).strict(),
   z.object({ type: z.literal("apply_trajectory_modifier"), params: ApplyTrajectoryModifierParams }).strict(),
+  z.object({ type: z.literal("apply_unresolved_tasks_penalty"), params: ApplyUnresolvedTasksPenaltyParams }).strict(),
 ]);
 
 export type Action = z.infer<typeof Action>;
