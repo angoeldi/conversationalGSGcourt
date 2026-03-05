@@ -79,12 +79,107 @@ export type TaskGenerationOptions = {
   minContinuations?: number;
 };
 
+export type TaskGenerationKnobs = {
+  continuityBias?: number;
+  diversityBias?: number;
+  stressBias?: number;
+};
+
+export type TaskGenerationTuningInput = {
+  turnIndex: number;
+  openTaskPressure: number;
+  recentTaskTypeCounts?: Partial<Record<Scenario["initial_tasks"][number]["task_type"], number>>;
+  worldState?: WorldState;
+  playerNationId: string;
+  knobs?: TaskGenerationKnobs;
+};
+
+export type TaskGenerationTuning = {
+  storyChance: number;
+  options: Required<TaskGenerationOptions>;
+};
+
 const DEFAULT_GENERATION_OPTIONS: Required<TaskGenerationOptions> = {
   minPetitions: 0,
   requireQuirk: false,
   continuationShare: 0,
   minContinuations: 0
 };
+
+const DEFAULT_TUNING_KNOBS: Required<TaskGenerationKnobs> = {
+  continuityBias: 1,
+  diversityBias: 1,
+  stressBias: 1
+};
+
+function clamp(value: number, min: number, max: number): number {
+  return Math.min(max, Math.max(min, value));
+}
+
+function computeStressSignal(worldState: WorldState | undefined, playerNationId: string): number {
+  const nation = worldState?.nations?.[playerNationId];
+  if (!nation) return 0.4;
+
+  const treasuryRatio = nation.gdp > 0 ? nation.treasury / Math.max(1, nation.gdp * 0.2) : 0;
+  const treasuryStress = clamp(1 - treasuryRatio, 0, 1);
+  const stabilityStress = clamp((55 - nation.stability) / 55, 0, 1);
+  const legitimacyStress = clamp((55 - nation.legitimacy) / 55, 0, 1);
+  const warStress = clamp(nation.war_exhaustion / 100, 0, 1);
+
+  return clamp((treasuryStress + stabilityStress + legitimacyStress + warStress) / 4, 0, 1);
+}
+
+export function deriveTaskGenerationTuning(input: TaskGenerationTuningInput): TaskGenerationTuning {
+  const normalizedTurn = Math.max(0, input.turnIndex);
+  const phase = normalizedTurn < 8 ? "early" : normalizedTurn < 24 ? "mid" : "late";
+  const pressure = clamp(input.openTaskPressure, 0, 1);
+  const knobs = { ...DEFAULT_TUNING_KNOBS, ...(input.knobs ?? {}) };
+  const stress = clamp(computeStressSignal(input.worldState, input.playerNationId) * knobs.stressBias, 0, 1);
+
+  const totals = Object.values(input.recentTaskTypeCounts ?? {}).reduce((sum, count) => sum + (count ?? 0), 0);
+  const petitionShare = totals > 0 ? ((input.recentTaskTypeCounts?.petition ?? 0) / totals) : 0;
+
+  const phaseBase = phase === "early"
+    ? { storyChance: 0.28, continuationShare: 0.4, minPetitions: 2, requireQuirk: true, minContinuations: 1 }
+    : phase === "mid"
+      ? { storyChance: 0.42, continuationShare: 0.58, minPetitions: 2, requireQuirk: true, minContinuations: 1 }
+      : { storyChance: 0.58, continuationShare: 0.74, minPetitions: 1, requireQuirk: false, minContinuations: 2 };
+
+  const continuityBias = clamp(knobs.continuityBias, 0.5, 1.5);
+  const diversityBias = clamp(knobs.diversityBias, 0.5, 1.5);
+  const continuityBoost = (pressure * 0.2) + (stress * 0.12);
+  const diversityPenalty = petitionShare > 0.62 ? (petitionShare - 0.62) * 0.8 * diversityBias : 0;
+
+  const continuationShare = clamp(
+    (phaseBase.continuationShare + continuityBoost - diversityPenalty) * continuityBias,
+    0.2,
+    0.9
+  );
+  const storyChance = clamp(
+    phaseBase.storyChance + continuationShare * 0.12 + stress * 0.08 - diversityPenalty * 0.15,
+    0.1,
+    0.85
+  );
+
+  const petitionFloor = phaseBase.minPetitions - (pressure > 0.7 ? 1 : 0) - (petitionShare > 0.66 ? 1 : 0);
+  const minPetitions = clamp(Math.round(petitionFloor * diversityBias), 0, 3);
+  const requireQuirk = phaseBase.requireQuirk || (petitionShare > 0.65 && pressure < 0.85);
+  const minContinuations = clamp(
+    phaseBase.minContinuations + (pressure > 0.5 ? 1 : 0) + (stress > 0.6 ? 1 : 0),
+    0,
+    3
+  );
+
+  return {
+    storyChance,
+    options: {
+      minPetitions,
+      requireQuirk,
+      continuationShare,
+      minContinuations
+    }
+  };
+}
 
 type TemplateVariant = {
   prompt: string;
