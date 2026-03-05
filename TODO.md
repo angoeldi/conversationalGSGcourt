@@ -73,6 +73,8 @@
   - **Rough priority:** P2
 
 ## Systems
+- [x] Add deterministic per-turn task generation tuning (turn phase, pressure, recent mix, nation stress) and wire it through game route generation.
+- [x] Add constrained task-generation header knobs for continuity/diversity/stress experimentation.
 
 - **Objective:** Expand simulation depth by introducing regional logistics pressure as an input to military and economic outcomes.
   - **Owner area:** `packages/engine`
