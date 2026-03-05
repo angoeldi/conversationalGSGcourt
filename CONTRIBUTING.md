@@ -41,6 +41,13 @@ pnpm -r build
 - DB changes: add a migration in `apps/server/sql/####_name.sql`, update `docs/db.md`.
 - UI changes: keep the tri-panel layout (map | court | chat) and avoid modal sprawl.
 
+### Prompt update workflow
+
+1. Update the canonical prompt constant(s) in `apps/server/src/lib/prompts.ts`.
+2. Mirror those changes in `docs/prompts.md` so the docs stay in sync with runtime behavior.
+3. Keep prompt consumer modules (for example `apps/server/src/lib/decision.ts`) importing prompt text from `prompts.ts` rather than defining local copies.
+4. Run prompt coverage tests (including `apps/server/src/lib/decision.test.ts`) to confirm key rule clauses are still present.
+
 ## Submitting changes
 
 - Keep PRs focused and small when possible.

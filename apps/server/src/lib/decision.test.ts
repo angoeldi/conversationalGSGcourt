@@ -1,13 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { DecisionParseOutput, TaskContext } from "@thecourt/shared";
-import { beforeAll } from "vitest";
-
-let normalizeDecisionParseOutput: typeof import("./decision")["normalizeDecisionParseOutput"];
-
-beforeAll(async () => {
-  process.env.DATABASE_URL = process.env.DATABASE_URL ?? "postgres://test";
-  ({ normalizeDecisionParseOutput } = await import("./decision"));
-});
+import { normalizeDecisionParseOutput } from "./decision";
+import { DECISION_SYSTEM_PROMPT } from "./prompts";
 
 const baseContext = TaskContext.parse({
   task_id: "11111111-1111-1111-8111-111111111111",
@@ -135,5 +129,37 @@ describe("normalizeDecisionParseOutput", () => {
       to_province_id: "66666666-6666-4666-8666-666666666666",
       units: 1200
     });
+  });
+});
+
+describe("decision system prompt", () => {
+  it("contains canonical rule clauses", () => {
+    const requiredClauses = [
+      '"proposed_bundles"',
+      '"label"',
+      '"params": { ... }',
+      "canonical parameter names",
+      "constraints.allowed_action_types",
+      "constraints.suggested_action_types",
+      "constraints.forbidden_action_types",
+      '"freeform_effect"',
+      "Never invent new action types"
+    ];
+
+    const presentClauses = requiredClauses.filter((clause) => DECISION_SYSTEM_PROMPT.includes(clause));
+    expect(presentClauses).toMatchInlineSnapshot(`
+      [
+        "\"proposed_bundles\"",
+        "\"label\"",
+        "\"params\": { ... }",
+        "canonical parameter names",
+        "constraints.allowed_action_types",
+        "constraints.suggested_action_types",
+        "constraints.forbidden_action_types",
+        "\"freeform_effect\"",
+        "Never invent new action types",
+      ]
+    `);
+    expect(presentClauses).toEqual(requiredClauses);
   });
 });
