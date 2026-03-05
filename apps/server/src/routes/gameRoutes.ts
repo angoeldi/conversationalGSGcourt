@@ -13,7 +13,7 @@ import { getLlmProviderWithOverride } from "../providers";
 import { env } from "../config";
 import { readLlmRequestHeaders } from "../lib/llmRequest";
 import { buildAutoDecision } from "../lib/autoDecision";
-import { fetchTaskWikiContext, generateTasksForTurn } from "../lib/taskGeneration";
+import { deriveTaskGenerationTuning, fetchTaskWikiContext, generateTasksForTurn, type StorySeed } from "../lib/taskGeneration";
 import { buildNationDirectory } from "../lib/nationDirectory";
 import { coerceDecisionToScenario } from "../lib/actionHarness";
 import { readGameOptionHeaders } from "../lib/gameOptions";
@@ -443,6 +443,26 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
           const openCount = openCountRow[0]?.count ?? 0;
           const capacity = Math.max(0, maxOpenTasks - openCount);
           const toCreate = Math.max(0, Math.min(inflowCount, capacity));
+          const openTaskPressure = maxOpenTasks > 0 ? Math.min(1, openCount / maxOpenTasks) : 0;
+          const recentTypeRows = (await c.query(
+            `SELECT task_type, COUNT(*)::int AS count
+             FROM tasks
+             WHERE game_id = $1 AND created_turn >= $2
+             GROUP BY task_type`,
+            [game.game_id, Math.max(0, newTurnIndex - 4)]
+          )).rows as Array<{ task_type: string; count: number }>;
+          const recentTaskTypeCounts = recentTypeRows.reduce<Record<string, number>>((acc, row) => {
+            acc[row.task_type] = row.count;
+            return acc;
+          }, {});
+          const tuning = deriveTaskGenerationTuning({
+            turnIndex: newTurnIndex,
+            openTaskPressure,
+            recentTaskTypeCounts: recentTaskTypeCounts as Parameters<typeof deriveTaskGenerationTuning>[0]["recentTaskTypeCounts"],
+            worldState: nextState,
+            playerNationId: scenario.player_nation_id,
+            knobs: options.taskGeneration
+          });
           const storySeeds = await buildStorySeeds(c, game.game_id, newTurnIndex);
           const generated = generateTasksForTurn(
             scenario,
@@ -452,13 +472,8 @@ export async function gameRoutes(app: FastifyInstance): Promise<void> {
             wikiContext,
             storySeeds,
             nextState,
-            0.4,
-            {
-              minPetitions: 2,
-              requireQuirk: true,
-              continuationShare: 0.6,
-              minContinuations: 1
-            }
+            tuning.storyChance,
+            tuning.options
           );
           for (const task of generated) {
             await c.query(
